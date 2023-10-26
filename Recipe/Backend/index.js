@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import { userRouter } from "./routes/user.js";
 import dotenv from "dotenv";
+import bcrypt from "bcrypt";
 // import { dataBaseConnection } from "./db.js";
 
 import cors from "cors";
