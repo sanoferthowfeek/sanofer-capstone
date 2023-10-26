@@ -1,6 +1,6 @@
 import { User } from "../models/user.js"
 import jwt from "jsonwebtoken";
-const SECRET_KEY = 'asfghjkl12345asdf';
+const SECRET_KEY = 'asfghjklmno12345asdf';
 
 export function getUserByEmail(request) {
     return User.findOne({
