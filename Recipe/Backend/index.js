@@ -1,7 +1,8 @@
 import express from "express";
 import mongoose from "mongoose";
 import { userRouter } from "./routes/user.js";
-import { recipeRouter} from "./routes/recipe.js"
+import { recipeRouter} from "./routes/recipe.js";
+import  { isAuthorized} from "./middlewares/auth.js";
 import dotenv from "dotenv";
 import bcrypt from "bcrypt";
 // import { dataBaseConnection } from "./db.js";
@@ -39,7 +40,7 @@ const params = {
 
 //routes
 app.use("/api/user",userRouter);
-app.use("/api/recipe",recipeRouter);
+app.use("/api/recipes",isAuthorized,recipeRouter);
 
 //listen the server
 app.listen(PORT, () => {

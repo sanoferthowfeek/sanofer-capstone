@@ -1,5 +1,5 @@
 import mongoose,{mongo} from "mongoose";
-
+import { ObjectId } from "bson";
 const recipeSchema = new mongoose.Schema({
 recipename:{
     type:String,
@@ -19,7 +19,14 @@ ingredients:{
 },
 steps:{
     type:String,
-    
+},
+date:{
+    type:String,
+    required:true,
+},
+user:{
+    type:ObjectId,
+ref:"user",
 }
 });
 
