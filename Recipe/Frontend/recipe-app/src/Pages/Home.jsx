@@ -1,5 +1,5 @@
 import React from 'react'
-import Base from './Base/Base.jsx';
+import Base from '../Base/Base.jsx';
 
 const Home = () => {
   return (

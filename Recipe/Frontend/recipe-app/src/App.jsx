@@ -18,7 +18,7 @@ function App() {
       <Base />
        <Sidebar />
        <Footer />
-       
+    
     </>
   )
 }
