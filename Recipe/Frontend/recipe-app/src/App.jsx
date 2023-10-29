@@ -10,15 +10,17 @@ import Sidebar from './Base/Sidebar.jsx'
 
 
 
+
+
 function App() {
  
 
   return (
     <>
-      <Base />
-       <Sidebar />
-       <Footer />
-    
+     <Base />
+     <Sidebar />
+     <Footer />
+       
     </>
   )
 }
