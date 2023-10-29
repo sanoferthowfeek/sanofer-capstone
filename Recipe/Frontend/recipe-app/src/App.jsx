@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import {Route,Link,Routes} from 'react-router-dom';
+import {Route,Routes} from 'react-router-dom';
 import Home from './Pages/Home.jsx'
 import About from './Pages/About.jsx'
 import Login from './Pages/Login.jsx'
@@ -15,6 +15,7 @@ function App() {
 
   return (
     <>
+    <Home />
     <div className='app'>
         <Routes>
           <Route path='/' exact component={<Home />}></Route>
@@ -22,9 +23,9 @@ function App() {
           <Route path='/login' component={<Login />}></Route>
           <Route path='/recipes'  component={<Recipes />}></Route>
           <Route path='/signup'  component={<Signup />}></Route>
-          <Route path='/addrecipes'  component={<Addrecipes />}></Route>
-          <Route path='/editrecipes'  component={<Editrecipes />}></Route>
-          <Route path='/savedrecipes'  component={<Savedrecipes />}></Route>
+          <Route path='/add' component={<Addrecipes />}></Route>
+          <Route path='/edit/:id' component={<Editrecipes />}></Route>
+          <Route path='/saved' component={<Savedrecipes />}></Route>
         </Routes>
     </div>
        

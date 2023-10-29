@@ -1,7 +1,9 @@
 import React from 'react';
 import {AppBar,Typography,Toolbar,IconButton,Avatar}from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 function Base({ title,children}) {
+  const navigate = useNavigate();
   return (
     <div>
         <header>
@@ -23,7 +25,9 @@ function Base({ title,children}) {
      About
     </IconButton>
     <IconButton 
-    edge="end" color="inherit" aria-label="Logout" sx={{ mr: 2 }}>
+    edge="end" color="inherit" aria-label="Logout"
+      onClick={()=>navigate("/recipes")}
+      sx={{ mr: 2 }}>
      Logout
     </IconButton>
     <IconButton 
