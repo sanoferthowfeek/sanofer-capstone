@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Base from '../Base/Base.jsx';
 import {TextField,Button}from '@mui/material';
 
+
 const Login = () => {
+
+  const [email,setEmail] = useState("");
+  const [password,setPassword] = useState("");
+
   return (
    <Base title={"Login"}> 
 

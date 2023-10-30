@@ -1,34 +1,33 @@
-import { useState } from 'react'
 import './App.css'
-import {Route,Routes} from 'react-router-dom';
+import {BrowserRouter,Route,Routes} from 'react-router-dom';
 import Home from './Pages/Home.jsx'
 import About from './Pages/About.jsx'
 import Login from './Pages/Login.jsx'
-import Recipes from './Pages/Recipes.jsx'
+import Menus from './Pages/Menus.jsx'
 import Signup from './Pages/Signup.jsx'
-import Addrecipes from './crud/Addrecipes.jsx'
-import Editrecipes from './crud/Editrecipes.jsx'
-import Savedrecipes from './crud/Savedrecipes.jsx'
+import Addrecipes from './Pages/Addrecipes.jsx'
+import Editrecipes from './Pages/Editrecipes.jsx'
+import Recipes from './Pages/Recipes.jsx'
 
 
 function App() {
 
   return (
     <>
-    <Home />
     <div className='app'>
+   <BrowserRouter>
         <Routes>
-          <Route path='/' exact component={<Home />}></Route>
-          <Route path='/about'  component={<About />}></Route>
-          <Route path='/login' component={<Login />}></Route>
-          <Route path='/recipes'  component={<Recipes />}></Route>
-          <Route path='/signup'  component={<Signup />}></Route>
-          <Route path='/add' component={<Addrecipes />}></Route>
-          <Route path='/edit/:id' component={<Editrecipes />}></Route>
-          <Route path='/saved' component={<Savedrecipes />}></Route>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/menus" element={<Menus />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/recipes" element={<Recipes />} />
+          <Route path="/add" element={<Addrecipes />} />
+          <Route path="/edit/:id" element={<Editrecipes />} />
         </Routes>
+    </BrowserRouter>
     </div>
-       
     </>
   )
 }

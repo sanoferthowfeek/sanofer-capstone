@@ -1,28 +1,18 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {useNavigate} from 'react-router-dom';
 
 
 function Sidebar() {
+  const navigate = useNavigate();
   return (
     <div className='container-fluid'>
-        <div className='row'>
+        <div className='column'>
 <div className='col-auto min-vh-50 bg-light'>
     <div className='nav'>
-    <ul>
-        <il>
-            <a className='nav-link px-2'>
-                <i className='bi-house' /><span className='ms-1 d-none d-sm-inline'>
-                    Add Recipes
-                    </span>
-            </a>
-            <a className='nav-link px-2'>
-                <i className='bi-house' /><span className='ms-1 d-none d-sm-inline'>
-                    Saved Recipes
-                    </span>
-            </a>
-        </il>
-    </ul>
+            <button type="submit" onClick={() =>navigate("/recipes")}>Recipes</button>
+            <button type="submit" onClick={() =>navigate("/add")}>Add Recipes</button>
+            <button type="submit" onClick={() =>navigate("/edit")}>Edit Recipes</button>
     </div>
 </div>
         </div>

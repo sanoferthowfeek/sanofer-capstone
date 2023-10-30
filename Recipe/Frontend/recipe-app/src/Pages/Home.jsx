@@ -5,11 +5,13 @@ import Footer from '../Base/Footer.jsx';
 const Home = () => {
   return (
     <div>
-<Base title={"Welcome To Recipe App"}> 
+    
+<Base > 
 <Sidebar/> 
-<h2>Find Best Recipes For Cooking,Let's Cook.....</h2>
-<h4>Learn Quick Easy & Delicious Recipes...</h4>
-<h5>Yummy.......</h5>
+<h1>Welcome To Recipe App</h1>
+<h4>Find Best Recipes For Cooking,Let's Cook.....</h4>
+<h5>Learn Quick Easy & Delicious Recipes...</h5>
+<h6>Yummy.......</h6>
 </Base>
 <Footer />
 </div>

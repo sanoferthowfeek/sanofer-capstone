@@ -14,21 +14,22 @@ footer {
 }
 
 .nav {
-  background-color: #130d12;
+  background-color: lightseagreen;
   overflow: hidden;
-}
-.nav a {
-  
-  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-.nav a:hover {
-  background-color: #ddd;
+
+.nav :hover {
+  background-color: yellowgreen;
   color: black;
+}
+
+.nav button {
+  background-color:lightcoral ;
 }
 
 .cards{
