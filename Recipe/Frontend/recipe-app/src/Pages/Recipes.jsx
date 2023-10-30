@@ -3,7 +3,7 @@ import Base from '../Base/Base.jsx';
 import { Paper,Typography,Button}from '@mui/material';
 import {useNavigate} from 'react-router-dom';
 
-function Recipes() {
+function Recipes(userRecipes,setUserRecipes) {
 
 const [recipes,setRecipes] = useState([]);
 const [err,setErr] = useState("");
@@ -26,6 +26,21 @@ const fetchData = async() =>{
 };
 fetchData();
 },[]);
+
+
+const handleDelete = async (id) => {
+  const res = await fetch ('http://localhost:8000/api/recipes/user/delete/${id}', {
+    method:"DELETE",
+    headers: {
+      "Content-Type":"application/json",
+      "x-auth-token": localStorage.getItem("token"),
+  },
+}
+  );
+  const data = await res.json();
+  const newUserRecipes = userRecipes.filter((data) => data.id!= id);
+  setUserRecipes([...newUserRecipes]);
+};
 
   return (
     <Base title={"All Recipes"} >
@@ -52,7 +67,7 @@ fetchData();
              <p>Date: {data.date}</p>
              <p>Posted By: {data.user.username}</p>
              <Button onClick={() =>navigate("/edit/${data._id}")}>Edit</Button>
-             <Button>Delete</Button>
+             <Button onClick={() => handleDelete (data._id)}>Delete</Button>
             </Paper>
           ))}
           {err ? <Typography color={"danger"}>{err}</Typography>:""}

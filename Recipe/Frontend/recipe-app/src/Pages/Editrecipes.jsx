@@ -16,8 +16,15 @@ function Editrecipes({userRecipes,setUserRecipes}) {
   const {id} = useParams();
 
 useEffect (() => {
-
-},[]);
+const data = userRecipes.find((data) =>data._id === id) 
+if(data){
+  setRecipename(data.recipename)
+  setRecipetype(data.recipetype)
+  setTimings(data.timings)
+  setIngredients(data.ingredients)
+  setSteps(data.steps)
+}
+},[id,userRecipes]);
 
   
 //api integration
@@ -42,13 +49,15 @@ async  function editNewRecipes(){
   if(!data.data){
     setErr(data.error);
   } else {
-    setUserRecipes([...userRecipes,data.data]);
-    setMsg(data.msg)
+    const editableIndex = userRecipes?.findIndex((data) =>data._id === id);
+    userRecipes[editableIndex] = data.data;
+    await setUserRecipes ([...userRecipes]);
+    setMsg(data.message);
   }
 }
 
   return (
-    <Base title={"Add Recipes"} >
+    <Base title={"Edit Recipes"} >
       <div>
       <Button variant="contained" color="success"
     onClick={() =>navigate("/")} >

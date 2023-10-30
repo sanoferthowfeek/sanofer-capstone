@@ -13,7 +13,7 @@ function Sidebar() {
             <button type="submit" onClick={() =>navigate("/recipes")}> All Recipes</button>
             <button type="submit" onClick={() =>navigate("/myrecipes")}> My Recipes</button>
             <button type="submit" onClick={() =>navigate("/add")}>Add Recipes</button>
-            <button type="submit" onClick={() =>navigate("/edit")}>Edit Recipes</button>
+            <button type="submit" onClick={() =>navigate("/edit/:id")}>Edit Recipes</button>
     </div>
 </div>
         </div>
