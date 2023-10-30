@@ -1,9 +1,19 @@
 import React from 'react'
 import Base from '../Base/Base.jsx';
+import {useNavigate} from 'react-router-dom';
+import {Button}from '@mui/material';
 
 const About = () => {
+  const navigate = useNavigate();
+
   return (
     <Base title={"Information About Recipe App"}> 
+    <div>
+      <Button variant="contained" color="success"
+    onClick={() =>navigate("/")} >
+  Back
+</Button>
+      </div>
     <h4> The Global Recipe Apps market is anticipated to rise at a considerable rate during the forecast period, between 2023 and 2030. In 2022, the market is growing at a steady rate and with the rising adoption of strategies by key players, the market is expected to rise over the projected horizon. </h4>
     <h4>The app allows the users to find recipes based on different criteria such as, course, cuisine, and type of food. It also provides a filtering system that can be used to filter the list of recipes based on the ingredients used in each recipe, the time it takes to make the food, and the number of servings.</h4>
     <h4>They teach us techniques, introduce us to new ingredients, encourage us to expand our palates, riff on old ways of doing things, and promise us new ways of doing things that with time will become old ways.</h4>

@@ -2,10 +2,20 @@ import React from 'react'
 import Base from '../Base/Base.jsx';
 import Sidebar from '../Base/Sidebar.jsx'
 import Footer from '../Base/Footer.jsx';
+import {useNavigate} from 'react-router-dom';
+import { useEffect } from 'react';
+
 const Home = () => {
+  const navigate = useNavigate("/");
+
+  // useEffect(() =>{
+  //   if (!localStorage.getItem("token")) {
+  //     navigate("/login", {replace: true});
+  //   }
+  // },[]);
+
   return (
     <div>
-    
 <Base > 
 <Sidebar/> 
 <h1>Welcome To Recipe App</h1>

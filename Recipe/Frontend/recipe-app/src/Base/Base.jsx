@@ -6,8 +6,9 @@ function Base({ title,children}) {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-
-  }
+localStorage.removeItem("token");
+navigate("/login");
+  };
 
   return (
     <div>
@@ -49,7 +50,7 @@ function Base({ title,children}) {
     </IconButton>
     <IconButton 
     edge="end" color="inherit" aria-label="Logout" 
-    onClick={() => handleLogout}
+    onClick={handleLogout}
     sx={{ mr: 2 }}>
      Logout
     </IconButton>
