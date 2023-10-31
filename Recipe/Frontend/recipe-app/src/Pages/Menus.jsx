@@ -5,7 +5,7 @@ import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 import {Button} from '@mui/material';
 import {useNavigate} from 'react-router-dom';
-import { all,breakfast,cooldrinks,dessert,dinner,lunch,mojitos,nonveg,veg,pasta,salads,soups} from '../images/images';
+import { all,breakfast,cooldrinks,dessert,dinner,lunch,mojitos,nonveg,veg,pasta,salads,soups} from '../images/images.js';
 
 
 
