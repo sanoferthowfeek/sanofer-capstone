@@ -58,7 +58,8 @@ async  function editNewRecipes(){
 
   return (
     <Base title={"Edit Recipes"} >
-      <div>
+      <div className='back' >
+      
       <Button variant="contained" color="success"
     onClick={() =>navigate("/")} >
   Back

@@ -43,7 +43,7 @@ async  function postNewRecipes(){
 
   return (
     <Base title={"Add Recipes"} >
-      <div>
+      <div className='back' >
       <Button variant="contained" color="success"
     onClick={() =>navigate("/")} >
   Back

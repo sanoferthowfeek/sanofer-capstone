@@ -80,7 +80,9 @@ image_box{
   background-color: rgb(4, 139, 192);
 }
 
-
+.heading{
+  cursor: pointer;
+}
 
 
 

@@ -30,7 +30,7 @@ function Myrecipes({userRecipes,setUserRecipes}) {
 
   return (
     <Base title={"My Recipes"} >
-      <div>
+      <div className='back'>
       <Button variant="contained" color="success"
     onClick={() =>navigate("/")} >
   Back

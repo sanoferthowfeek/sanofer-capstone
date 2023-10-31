@@ -44,7 +44,7 @@ const handleDelete = async (id) => {
 
   return (
     <Base title={"All Recipes"} >
-      <div>
+      <div className='app'>
         <Button 
         edge="end"
         color="primary"

@@ -15,7 +15,8 @@ dotenv.config();
 
 //server setup
 const app = express();
-const PORT = 8000 ;
+const PORT = process.env.PORT ;
+
 
 //middlewares
 app.use(express.json());
