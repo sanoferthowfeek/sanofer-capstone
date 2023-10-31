@@ -1,18 +1,19 @@
 import React from 'react'
 import Cards from '../Cards.jsx'
-
+import {useNavigate} from 'react-router-dom';
 
 function Breakfast() {
+  const navigate = useNavigate();
   return (
     <div>
       <h1 className='heading'>BREAKFAST</h1>
-        <div className="input-item">
-            <button
-              className="back" type="button" 
-              >
+        
+          <div className='back'>
+          <button type="button" 
+              onClick={() =>navigate("/menus")} >
               Back
             </button>
-          </div> 
+      </div>
          <Cards  name="tea" type="drinks" time="3 mins" 
          ingredient="teapowder,milk,sugar"
          step="take milk and tea"

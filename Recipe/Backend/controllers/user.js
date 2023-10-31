@@ -1,6 +1,6 @@
 import { User } from "../models/user.js"
 import jwt from "jsonwebtoken";
-const SECRET_KEY = 'asfghjklmno12345asdf';
+
 
 export function getUserByEmail(request) {
     return User.findOne({
@@ -13,5 +13,5 @@ export function getUserById(id) {
 }
 
 export function generateToken(id){
-    return jwt.sign({id},SECRET_KEY);
+    return jwt.sign({id},process.env.SECRET_KEY);
 }

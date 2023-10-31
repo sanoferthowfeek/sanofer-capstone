@@ -9,7 +9,7 @@ function Cards(props) {
          <div className="cards">
        
        <div className="image_box">
-             <img src= {props.image} alt="Recipe" />
+             <img src= {props.img} alt="Recipe" />
          </div>
              <div className="details">
              <h3>Recipe Name: {props.name}</h3>

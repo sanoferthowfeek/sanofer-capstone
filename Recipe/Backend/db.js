@@ -1,5 +1,5 @@
-import mongoose from "./mongoose";
-const MONGO_URL = 'mongodb+srv://sanofer:guvi1234@cluster0.htinaip.mongodb.net/?retryWrites=true&w=majori';
+import mongoose from "mongoose";
+const MONGO_URL = process.env.MONGO_URL;
 
  export function dataBaseConnection(){
   const params = {
@@ -7,7 +7,7 @@ const MONGO_URL = 'mongodb+srv://sanofer:guvi1234@cluster0.htinaip.mongodb.net/?
     useUnifiedTopology: true,
   };
   try {
-    mongoose.connect(MONGO_URL, params);
+    'mongoose.connect(MONGO_URL,params)';
     console.log(" MongoDB Connected");
   } catch (error) {
     console.log("MongoDB Connection Failed", error);
