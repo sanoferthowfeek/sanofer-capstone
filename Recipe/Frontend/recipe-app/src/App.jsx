@@ -28,9 +28,9 @@ function App() {
 const [userRecipes,setUserRecipes] = useState([]);
   return (
     <>
-    <div className='app'>
-   <BrowserRouter>
-        <Routes>
+          <div className='app'>
+          <BrowserRouter>
+          <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/menus" element={<Menus />} />
           <Route path="/about" element={<About />} />
@@ -52,9 +52,9 @@ const [userRecipes,setUserRecipes] = useState([]);
           <Route path="/salads" element={<Salads />} />
           <Route path="/soups" element={<Soups />} />
           <Route path="/vegmeals" element={<Vegmeals />} />
-        </Routes>
-    </BrowserRouter>
-    </div>
+          </Routes>
+          </BrowserRouter>
+          </div>
     </>
   )
 }

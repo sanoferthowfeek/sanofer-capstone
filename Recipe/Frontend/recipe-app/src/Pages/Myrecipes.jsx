@@ -29,16 +29,16 @@ function Myrecipes({userRecipes,setUserRecipes}) {
     
 
   return (
-    <Base title={"My Recipes"} >
-      <div className='back'>
-      <Button variant="contained" color="success"
-    onClick={() =>navigate("/")} >
-  Back
-</Button>
-      </div>
-      {userRecipes && (
-        <div>
-          {userRecipes?.map((data) =>(
+        <Base title={"My Recipes"} >
+         <div className='back'>
+         <Button variant="contained" color="success"
+           onClick={() =>navigate("/")} >
+            Back
+            </Button>
+            </div>
+            {userRecipes && (
+            <div>
+            {userRecipes?.map((data) =>(
             <Paper elevation={6} key={data.id}>
             <h3>Recipe Name: {data.recipename}</h3>
              <h4>Recipe Type: {data.recipetype}</h4>
@@ -53,7 +53,6 @@ function Myrecipes({userRecipes,setUserRecipes}) {
           {err ? <Typography color={"danger"}>{err}</Typography>:""}
         </div>
       )
-
       } 
       </Base>
   )

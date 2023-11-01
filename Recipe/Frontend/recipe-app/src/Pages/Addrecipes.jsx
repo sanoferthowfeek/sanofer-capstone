@@ -45,12 +45,12 @@ async  function postNewRecipes(){
     <Base title={"Add Recipes"} >
       <div className='back' >
       <Button variant="contained" color="success"
-    onClick={() =>navigate("/")} >
-  Back
-</Button>
+      onClick={() =>navigate("/")} >
+      Back
+      </Button>
       </div>
       <form>
-        <TextField 
+ <TextField 
         fullWidth
         label="Recipe Name"
         variant="outlined"
@@ -101,7 +101,7 @@ onClick={postNewRecipes}>Add Recipes</Button>
 
 {err ? <Typography color={"danger"}>{err}</Typography>:""}
 {msg ? <Typography color={"success"}>{msg}</Typography>:""}
-      </form>
+    </form>
     </Base>
   )
 }

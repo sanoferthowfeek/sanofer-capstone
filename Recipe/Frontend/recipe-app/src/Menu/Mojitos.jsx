@@ -20,7 +20,7 @@ function Mojitos() {
          step2="Strain into a glass filled with ice"
          step3="Top with a splash of club soda "
          step4="Garnish with lime slices and more mint"
-         img= ''/>
+         img= 'https://media.istockphoto.com/id/1253999472/photo/mojito-cocktail.webp?b=1&s=170667a&w=0&k=20&c=s3baSD_ql2iPXriDTIr19iIKqhuZUAoIUi9TacDJKOA='/>
 
 <Cards  name="Strawberry Mojito" 
          type="Drinks" 
@@ -36,7 +36,8 @@ function Mojitos() {
          step2="Strain into a glass filled with ice"
          step3="Top with a splash of club soda"
          step4="Garnish with strawberry slices and more mint"
-         img= ''/>
+         img= 'https://media.istockphoto.com/id/1254208272/photo/strawberry-lime-mojito-with-fresh-mint-and-ice-in-glass-jar.webp?b=1&s=170667a&w=0&k=20&c=4c3DdFXEeOQdwrBEgsCetXZFz1-Fo8DO6BE8cNS4daA='/>
+
          <Cards  name="BlueBerry Mojito" 
          type="Drinks" 
          time="5 minutes" 
@@ -51,7 +52,7 @@ function Mojitos() {
          step2="Strain into a glass filled with ice"
          step3="Top with a splash of club soda"
          step4="Garnish with blueberry slices and more mint"
-         img= ''/>
+         img= 'https://media.istockphoto.com/id/697523738/photo/blueberry-ice-sangria-with-mint-in-glasses.webp?b=1&s=170667a&w=0&k=20&c=hD5awJcghTte87E7tsj_uFcPls6zRDZz8Mt96AtRbVQ='/>
   </div>
   )
 }

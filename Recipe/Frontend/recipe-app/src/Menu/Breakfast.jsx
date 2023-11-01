@@ -35,7 +35,7 @@ function Breakfast() {
          ingredient5='1 cup unsweetened almond milk or milk of choice'
          step="Puree 1 1/4 cups fruit and milk in a blender or food processor until smooth"
          step1="Scrape into a medium bowl"
-         step2=" mix in chia, syrup and vanilla"
+         step2=" Mix in chia, syrup and vanilla"
          step3="Cover and refrigerate for at least 8 hours and up to 3 days"
          step4="Divide the pudding between 2 bowls, layering each serving with 1/4 cup of the remaining fruit, 1/4 cup yogurt and 2 tablespoons granola"
          img= 'https://media.istockphoto.com/id/1417930497/photo/vegan-yogurt-chia-pudding-with-berries.webp?b=1&s=170667a&w=0&k=20&c=R6NeSbA6P16KGZJEZJIZV-kkYGuY_WY7eZ_i1P27K34='/>
@@ -48,7 +48,7 @@ function Breakfast() {
          ingredient2='¼ cup diced ripe mango, fresh or frozen'
          ingredient3=' ¼ teaspoon vanilla extract'
          ingredient4='½ teaspoon chia seeds'
-         ingredient5='brown sugar, toasted unsweetened shredded coconut'
+         ingredient5='Brown sugar, toasted unsweetened shredded coconut'
          step="Bring oat milk to a boil in a small pot over high heat"
          step1="Reduce heat to medium"
          step2="Stir in oats and salt; cook, the liquid is absorbed and the bubbles from the oat milk become smaller, 1 to 2 minutes"
@@ -69,7 +69,7 @@ function Breakfast() {
          step1="Stir in the onions, tomatoes,ginger and garlic and saute for a couple of minutes"
          step2="Add the fennel seeds, black pepper corns, turmeric powder, red chilli powder and cook until it all combined together"
          step3="Stir in the mint leaves, semiya, salt and 1 1/2 cups of water"
-         step4="stir in the lemon juice and gently mix everything together"
+         step4="Stir in the lemon juice and gently mix everything together"
          img= 'https://media.istockphoto.com/id/1124396175/photo/rava-upma-uppuma-south-indian-breakfast-served-in-a-bowl-selective-focus.webp?b=1&s=170667a&w=0&k=20&c=yReqE3AHpSyZuQEBf7OLR1ojUhMRP7oMQIEP32XHtms='/>
          
          <Cards  name="Banana Oatmeal" 

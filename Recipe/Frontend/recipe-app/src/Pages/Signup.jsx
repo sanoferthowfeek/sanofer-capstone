@@ -68,11 +68,11 @@ const Signup = () => {
     variant="contained"
     onClick={handleSignup}
     >
-        SignUp
+    SignUp
     </Button>
     {err ? <Typography color={"danger"}>{err}</Typography>:""}
-       </Base>
+    </Base>
   )
-      }
+  }
 
 export default Signup

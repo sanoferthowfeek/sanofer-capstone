@@ -11,7 +11,7 @@ function Dessert() {
          time="10 minutes" 
          ingredient='1/2 cup rava, 1 and 1/2 cups water'
          ingredient1='Sugar,Ghee,Oil'
-         ingredient2='a pinch kesari food color'
+         ingredient2='A pinch kesari food color'
          ingredient3='15 cashewnuts,salt'
          ingredient4='10 raisins'
          ingredient5=' Cardamom powder'
@@ -20,7 +20,7 @@ function Dessert() {
          step2="Heat 1 and 1/2 cups water along with 1/8 teaspoon salt and 5 strands saffron"
          step3="Add it to roasted rava,1 cup sugar"
          step4="Cook partially covered for 2 mins,Add 1/4 teaspoon cardamom powder, fried cashews, raisins along with 2 tablespoon refined oil(optional)"
-         img= ''/>
+         img= 'https://media.istockphoto.com/id/823328280/photo/plain-or-kesar-flavoured-semolina-halwa-sooji-ka-halwa-or-sweet-rava-sheera-or-shira-indian.webp?b=1&s=170667a&w=0&k=20&c=slnVoaJurWXLKwDNdrvnQWvOMu_ExviT1SyfrfDLD8w='/>
 
          <Cards  name="Oreo brownie slice" 
          type="Brownie" 
@@ -36,9 +36,9 @@ function Dessert() {
          step2="Stir butter and chocolate in a medium saucepan over medium heat for 5 minutes or until smooth"
          step3="Remove from heat, Stir in sugar,Cool 10 minutes"
          step4="Add eggs, cocoa and flour. Stir to combine, Pour the batter into the prepared pan,bake it"
-         img= ''/>
+         img= 'https://media.istockphoto.com/id/1428496335/photo/cookies-and-cream-cake-with-dulce-de-leche.webp?b=1&s=170667a&w=0&k=20&c=xSbPnFIssjM5ZzGVVXrnoXsPjLqMmY6DhfzhtpXzLh0='/>
 
-         <Cards  name="AGAR FRUIT JELLY" 
+         <Cards  name="Agar Fruit Jelly" 
          type="Jelly" 
          time="10 minutes" 
          ingredient='Fruit Juice two flavour'
@@ -48,11 +48,11 @@ function Dessert() {
          ingredient4='Food Colour'
          ingredient5='Nuts'
          step="Take agar agar in a bowl, add water and soak it for 10 mins"
-         step1="heat it gently till it is melted"
+         step1="Heat it gently till it is melted"
          step2="Add honey to it"
          step3="Heat till it is completely boiled"
          step4="Pour it over the moulds and set till completely se"
-         img= ''/>
+         img= 'https://media.istockphoto.com/id/483686806/photo/berry-fruit-jelly-with-fresh-berries-summer-dessert.webp?b=1&s=170667a&w=0&k=20&c=3lgP4XysZFLkjwtWNWLilLFSH54L3FXcI0oFrBQsT6Y='/>
   </div>
   )
 }

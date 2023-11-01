@@ -6,7 +6,7 @@ import {useNavigate} from 'react-router-dom';
 import { useEffect } from 'react';
 
 const Home = () => {
-  const navigate = useNavigate("/");
+const navigate = useNavigate("/");
 
   // useEffect(() =>{
   //   if (!localStorage.getItem("token")) {
@@ -15,7 +15,7 @@ const Home = () => {
   // },[]);
 
   return (
-    <div>
+<div>
 <Base > 
 <Sidebar/> 
 <h1>Welcome To Recipe App</h1>
