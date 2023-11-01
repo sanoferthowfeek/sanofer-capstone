@@ -1,21 +1,11 @@
 import React from 'react'
 import Cards from '../Cards.jsx'
-import {useNavigate} from 'react-router-dom';
+import Heading from '../Base/Heading.jsx';
 
 function Salads() {
-  const navigate = useNavigate();
   return (
     <div>
-      <h1 className='heading'>SALADS</h1>
-      <div className='back'>
-          <button type="button" 
-              onClick={() =>navigate("/menus")} >
-              Back
-            </button>
-           </div>
-         <Cards />
-         <Cards />
-         <Cards />
+      <Heading title={"SALADS"}></Heading>
          <Cards />
          <Cards />
   </div>

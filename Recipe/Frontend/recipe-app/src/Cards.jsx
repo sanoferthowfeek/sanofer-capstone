@@ -22,13 +22,13 @@ function Cards(props) {
             <li>{props.ingredient3}</li> 
             <li>{props.ingredient4}</li> 
             <li>{props.ingredient5}</li> </h6></ul>
-            <ul><h6>Steps: 
+            <ol><h6>Steps: 
               <li>{props.step}</li>
               <li>{props.step1}</li>
               <li>{props.step2}</li>
               <li>{props.step3}</li>
               <li>{props.step4}</li>
-              </h6></ul>
+              </h6></ol>
          </div>
      </div>
     </div>

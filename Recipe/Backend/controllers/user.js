@@ -1,11 +1,19 @@
 import { User } from "../models/user.js"
 import jwt from "jsonwebtoken";
+import dotenv from "dotenv";
+dotenv.config();
 
-
-export function getUserByEmail(request) {
-    return User.findOne({
+export async function getUserByEmail(request) {
+try {
+    console.log(request.body);
+    const user =  await User.findOne({
 email:request.body.email,
     });
+    console.log(user);
+    return user;
+} catch (error) {
+    console.log(error);
+}
 }
 
 export function getUserById(id) {

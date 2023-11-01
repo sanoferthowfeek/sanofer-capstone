@@ -1,5 +1,7 @@
 import jwt from "jsonwebtoken";
 import { getUserById } from "../controllers/user.js";
+import dotenv from "dotenv";
+dotenv.config();
 
 //custom middleware
  const isAuthorized = async (req, res,  next) => {
