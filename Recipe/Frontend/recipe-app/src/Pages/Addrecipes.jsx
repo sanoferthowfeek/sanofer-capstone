@@ -97,6 +97,7 @@ async  function postNewRecipes(){
         sx={{m:2}}/>
 
 <Button type="submit" variant='contained'
+style={{backgroundColor:"green",color:"white"}}
 onClick={postNewRecipes}>Add Recipes</Button>
 
 {err ? <Typography color={"danger"}>{err}</Typography>:""}

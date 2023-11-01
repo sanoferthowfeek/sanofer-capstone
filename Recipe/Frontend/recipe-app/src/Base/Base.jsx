@@ -13,7 +13,7 @@ navigate("/login");
   return (
     <div>
   <header>
-  <AppBar position="static">
+  <AppBar position="static" style={{backgroundColor:"green",color:"white"}}>
   <Toolbar variant="dense">
   <Typography sx={{ mr: 2 }}>
      RECIPE_APP
@@ -66,7 +66,7 @@ navigate("/login");
   </AppBar>
   </header>
   <main>
-  <h1>{title}</h1>
+  <h1 className='basehead'>{title}</h1>
   <div className='content'>{children}</div>
   </main>
   </div>

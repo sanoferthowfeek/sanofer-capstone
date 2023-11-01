@@ -141,7 +141,7 @@ export default function Menus() {
   const navigate = useNavigate();
   return (
      <div>
-      <h2>Menus</h2>
+      <h2 className='heading'>Menus</h2>
       <div className='back'>
       <Button variant="contained" color="success"
       onClick={() =>navigate("/")} >
@@ -153,7 +153,7 @@ export default function Menus() {
       <ImageButton
           focusRipple
           key={image.title}
-          onClick={() =>navigate("/breakfast")}
+          onClick={() =>navigate("/all")}
           style={{
             width: image.width,
           }}

@@ -33,7 +33,8 @@ if(data.token) {
   };
 
   return (
-<Base title={"Login"}> 
+<div className='login'>
+<Base title={"Login"} > 
 
 <TextField 
 fullWidth 
@@ -54,12 +55,14 @@ type="password" />
 <Button 
 type="submit" 
 variant="contained"
+style={{backgroundColor:"gray",color:"white"}}
 onClick={handleLogin}>
 Login
 </Button>
 
 {err ? <Typography color={"danger"}>{err}</Typography>:""}
 </Base>
+</div>
   )
 }
 

@@ -36,7 +36,7 @@ const Signup = () => {
 
 
   return (
-    
+    <div className='signup'>
     <Base title={"Signup"}> 
 
     <TextField 
@@ -66,12 +66,14 @@ const Signup = () => {
     <Button 
     type="submit" 
     variant="contained"
+    style={{backgroundColor:"green",color:"white"}}
     onClick={handleSignup}
     >
     SignUp
     </Button>
     {err ? <Typography color={"danger"}>{err}</Typography>:""}
     </Base>
+    </div>
   )
   }
 

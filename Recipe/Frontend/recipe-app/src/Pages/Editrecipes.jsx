@@ -112,6 +112,7 @@ async  function editNewRecipes(){
         sx={{m:2}}/>
 
 <Button type="submit" variant='contained'
+style={{backgroundColor:"green",color:"white"}}
 onClick={editNewRecipes}>EditRecipes</Button>
 
 {err ? <Typography color={"danger"}>{err}</Typography>:""}
