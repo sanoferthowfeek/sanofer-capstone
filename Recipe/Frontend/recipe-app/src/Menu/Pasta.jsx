@@ -6,8 +6,53 @@ function Pasta() {
   return (
     <div>
      <Heading title={"PASTA"}></Heading>
-         <Cards />
-         <Cards />
+     <Cards  name="" 
+         type="" 
+         time=" minutes" 
+         ingredient=''
+         ingredient1=''
+         ingredient2=''
+         ingredient3=''
+         ingredient4=''
+         ingredient5=' '
+         step=""
+         step1=""
+         step2=""
+         step3=""
+         step4=""
+         img= ''/>
+
+         <Cards  name="" 
+         type="" 
+         time=" minutes" 
+         ingredient=''
+         ingredient1=''
+         ingredient2=''
+         ingredient3=''
+         ingredient4=''
+         ingredient5=' '
+         step=""
+         step1=""
+         step2=""
+         step3=""
+         step4=""
+         img= ''/>
+         
+         <Cards  name="" 
+         type="" 
+         time=" minutes" 
+         ingredient=''
+         ingredient1=''
+         ingredient2=''
+         ingredient3=''
+         ingredient4=''
+         ingredient5=' '
+         step=""
+         step1=""
+         step2=""
+         step3=""
+         step4=""
+         img= ''/>
   </div>
   )
 }

@@ -38,53 +38,23 @@ function Cooldrinks() {
          step4="Discard the mint and lemon from the iced tea concentrate,Add ginger ale"
          img= ''/>
 
-<Cards  name="" 
-         type="" 
-         time=" minutes" 
-         ingredient=''
-         ingredient1=''
-         ingredient2=''
-         ingredient3=''
-         ingredient4=''
-         ingredient5=' '
-         step=""
-         step1=""
-         step2=""
-         step3=""
-         step4=""
+<Cards  name="Watermelon Limeade " 
+         type="Drinks" 
+         time="5 minutes" 
+         ingredient='1 1/4 c. fresh lime juice'
+         ingredient1='16 c. seedless watermelon pieces'
+         ingredient2='Ginger ale'
+         ingredient3='Water'
+         ingredient4='Watermelon puree'
+         ingredient5='Ice cubes'
+         step="Using a paring knife and working at an angle, cut around one end of watermelon to create a lid "
+         step1="scoop out fruit with a metal spoon"
+         step2="Fill with watermelon limeade"
+         step3="replace lid"
+         step4="position on an iron stand or a bowl"
          img= ''/>
 
-<Cards  name="" 
-         type="" 
-         time=" minutes" 
-         ingredient=''
-         ingredient1=''
-         ingredient2=''
-         ingredient3=''
-         ingredient4=''
-         ingredient5=' '
-         step=""
-         step1=""
-         step2=""
-         step3=""
-         step4=""
-         img= ''/>
 
-<Cards  name="" 
-         type="" 
-         time=" minutes" 
-         ingredient=''
-         ingredient1=''
-         ingredient2=''
-         ingredient3=''
-         ingredient4=''
-         ingredient5=' '
-         step=""
-         step1=""
-         step2=""
-         step3=""
-         step4=""
-         img= ''/>
   </div>
   )
 }
