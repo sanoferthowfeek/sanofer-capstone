@@ -152,7 +152,7 @@ export default function Menus() {
       <ImageButton
           focusRipple
           key={image.title}
-          onClick={() =>navigate("/all")}
+          onClick={() =>navigate(`/${image.title}`)}
           style={{
             width: image.width,
           }}

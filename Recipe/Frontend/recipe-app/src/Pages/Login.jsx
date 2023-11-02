@@ -39,7 +39,7 @@ if(data.token) {
 <TextField 
 fullWidth 
 label="email" 
-value={"Email"} 
+value={email} 
 onChange={(e) => setEmail(e.target.value)}
 sx={{ m:2}} 
 type="email" />
@@ -47,7 +47,7 @@ type="email" />
 <TextField 
 fullWidth 
 label="password" 
-value={"Password"} 
+value={password} 
 onChange={(e) => setPassword(e.target.value)}
 sx={{ m:2}} 
 type="password" />

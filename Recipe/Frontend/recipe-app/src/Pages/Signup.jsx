@@ -42,7 +42,7 @@ const Signup = () => {
     <TextField 
     fullWidth 
     label="username" 
-    value={"Username"} 
+    value={username} 
     onChange={(e) => setUserName(e.target.value)}
     sx={{ m:2}} 
     type="text" />
@@ -50,7 +50,7 @@ const Signup = () => {
     <TextField 
     fullWidth 
     label="email" 
-    value={"Email"} 
+    value={email} 
     onChange={(e) => setEmail(e.target.value)}
     sx={{ m:2}} 
     type="email" />
@@ -58,7 +58,7 @@ const Signup = () => {
     <TextField 
     fullWidth 
     label="password" 
-    value={"Password"} 
+    value={password} 
     onChange={(e) => setPassword(e.target.value)}
     sx={{ m:2}} 
     type="password" />

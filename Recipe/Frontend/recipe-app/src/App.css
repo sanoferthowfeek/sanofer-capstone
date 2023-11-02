@@ -12,6 +12,7 @@ footer {
   padding: 3px;
   background-color: #ff4081;
   color: white;
+  justify-content: flex-end;
 }
 
 .nav {
@@ -44,10 +45,11 @@ footer {
 
 .cards{
   display:flex;
+  margin: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px;
-  width:100%;
+  width:98%;
 }
 
 .cards:hover {
@@ -58,15 +60,13 @@ footer {
 .details {
   padding: 2px 16px;
 }
-img {
+.img {
   border-radius: 5px 5px 0 0;
   padding: 5px;
-  
-  
 }
-image_box{
-  width:25%;
-  height:25%;
+.image_box{
+  width:350px;
+  height:390px;
   border-radius: 5px 5px 0 0;
 }
 
@@ -105,6 +105,8 @@ image_box{
 
 .signup{
   background-color: #fce4ec;
+  height: 97vh;
+  width: 97vw;
 }
 
 .login{
@@ -132,16 +134,12 @@ image_box{
   text-align: center;
 }
 
-.app{
-  height: auto;
-  width: auto;
-}
 
 .home{
   color: black;
   font-family: 'Times New Roman', Times, serif;
-  height: vh;
-  width: vw;
+  height: 100vh;
+  width: 100vw;
   
 }
 
@@ -189,7 +187,9 @@ image_box{
 
 .menu{
   /* display: inline-block; */
+  display: flex;
   justify-content: center;
+  align-items: center;
   
 
 }

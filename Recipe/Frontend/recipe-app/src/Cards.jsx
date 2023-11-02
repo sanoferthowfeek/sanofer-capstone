@@ -7,8 +7,8 @@ function Cards(props) {
   return (
     <div>
             <div className="cards">
-            <div className="image_box">
-             <img src= {props.img} alt="Recipe" />
+            <div >
+             <img  className="image_box" src= {props.img} alt="Recipe" />
              </div>
              <div className="details">
              <div className='recipetitle'><h3>Recipe Name: {props.name}</h3></div>
