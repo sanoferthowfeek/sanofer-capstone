@@ -59,6 +59,7 @@ async  function editNewRecipes(){
 }
 
   return (
+    <div className='editrecipes'>
     <Base title={"Edit Recipes"} >
        <div className='allback'>
         <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
@@ -119,6 +120,7 @@ EditRecipes</Button>
 {msg ? <Typography color={"success"}>{msg}</Typography>:""}
     </form>
     </Base>
+    </div>
   )
 }
 

@@ -38,9 +38,11 @@ const Signup = () => {
   return (
     <div className='signup'>
     <Base title={"Signup"}> 
+    <br/>
+    <br />
 
     <TextField 
-    fullWidth 
+    
     label="username" 
     value={username} 
     onChange={(e) => setUserName(e.target.value)}
@@ -48,7 +50,7 @@ const Signup = () => {
     type="text" />
 
     <TextField 
-    fullWidth 
+  
     label="email" 
     value={email} 
     onChange={(e) => setEmail(e.target.value)}
@@ -56,7 +58,7 @@ const Signup = () => {
     type="email" />
     
     <TextField 
-    fullWidth 
+    
     label="password" 
     value={password} 
     onChange={(e) => setPassword(e.target.value)}
@@ -64,6 +66,7 @@ const Signup = () => {
     type="password" />
     
     <Button 
+    className='signbtn'
     type="submit" 
     variant="contained"
     style={{backgroundColor:"#e91e63",color:"white"}}

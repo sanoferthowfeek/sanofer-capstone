@@ -30,10 +30,15 @@ function Myrecipes({userRecipes,setUserRecipes}) {
     
 
   return (
+    <div className='myrecipes'>
         <Base title={"My Recipes"} >
          <div className='allback'>
         <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
             {userRecipes && (
             <div>
             {userRecipes?.map((data) =>(
@@ -53,6 +58,7 @@ function Myrecipes({userRecipes,setUserRecipes}) {
       )
       } 
       </Base>
+      </div>
   )
 }
 

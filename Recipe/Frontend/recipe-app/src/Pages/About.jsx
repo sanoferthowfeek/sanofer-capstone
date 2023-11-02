@@ -13,6 +13,10 @@ const About = () => {
       <div className='allback'>
         <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
       <h4 className='head'> The Global Recipe Apps market is anticipated to rise at a considerable rate during the forecast period, between 2023 and 2030. In 2022, the market is growing at a steady rate and with the rising adoption of strategies by key players, the market is expected to rise over the projected horizon. </h4>
       <br/>
       <h4  className='head'>The app allows the users to find recipes based on different criteria such as, course, cuisine, and type of food. It also provides a filtering system that can be used to filter the list of recipes based on the ingredients used in each recipe, the time it takes to make the food, and the number of servings.</h4>

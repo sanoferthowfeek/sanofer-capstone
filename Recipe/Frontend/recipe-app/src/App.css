@@ -12,7 +12,10 @@ footer {
   padding: 3px;
   background-color: #ff4081;
   color: white;
-  justify-content: flex-end;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .nav {
@@ -72,19 +75,6 @@ footer {
 
 
 .back{
-  /* background-color: lightpink;
-  margin-right: 25px;
-  display: flex;
-  color: white;
-  border-radius: 0px;
-  border: none;
-  margin-top: 5px;
-  padding: 10px;
-  width: 60px;
-  cursor: pointer;
-  justify-content:flex-end;
-  flex-direction: column;
-  float:right */
   display:inline;
   margin: 20px;
   float:right;
@@ -97,7 +87,6 @@ footer {
 }
 
 .back:hover{
-  /* background-color: rgb(4, 139, 192); */
   background-color: #f48fb1;
   color: black;
   border-color: red;
@@ -105,12 +94,18 @@ footer {
 
 .signup{
   background-color: #fce4ec;
-  height: 97vh;
-  width: 97vw;
+  height: 100vh;
+  width: 100vw;
 }
+
+/* .signbtn{
+  float:inline-end
+} */
 
 .login{
   background-color: #fce4ec;
+  height: 100vh;
+  width: 100vw;
 }
 .about{
   background-color: #fce4ec;
@@ -141,6 +136,26 @@ footer {
   height: 100vh;
   width: 100vw;
   
+}
+
+.add{
+  height: 100vh;
+  width: 100vw;
+}
+
+.allrecipes{
+  height: 100vh;
+  width: 100vw;
+}
+
+.myrecipes{
+  height: 100vh;
+  width: 100vw;
+}
+
+.editrecipes{
+  height: 100vh;
+  width: 100vw;
 }
 
 .all{
@@ -186,12 +201,8 @@ footer {
 }
 
 .menu{
-  /* display: inline-block; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-
+  max-width: 500px;
+  margin: auto;
 }
 
 .recipetitle{

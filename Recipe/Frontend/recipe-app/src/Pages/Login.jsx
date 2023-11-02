@@ -37,7 +37,7 @@ if(data.token) {
 <Base title={"Login"} > 
 
 <TextField 
-fullWidth 
+ 
 label="email" 
 value={email} 
 onChange={(e) => setEmail(e.target.value)}
@@ -45,7 +45,7 @@ sx={{ m:2}}
 type="email" />
 
 <TextField 
-fullWidth 
+ 
 label="password" 
 value={password} 
 onChange={(e) => setPassword(e.target.value)}

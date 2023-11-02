@@ -9,20 +9,20 @@ import MoodRoundedIcon from '@mui/icons-material/MoodRounded';
 const Home = () => {
 const navigate = useNavigate("/");
 
-  // useEffect(() =>{
-  //   if (!localStorage.getItem("token")) {
-  //     navigate("/login", {replace: true});
-  //   }
-  // },[]);
+  useEffect(() =>{
+    if (!localStorage.getItem("token")) {
+      navigate("/login", {replace: true});
+    }
+  },[]);
 
   return (
 <div className='home'>
 <Base > 
 <Sidebar/> 
-<h1 className='homehead'><b>Welcome To Recipe App</b></h1>
-<h4><i>Find Best Recipes For Cooking,Let's Cook.....</i></h4>
-<h5><i>Learn Quick,Easy & Delicious Recipes...</i></h5>
-<h6><i>Yummy.......<MoodRoundedIcon /></i></h6>
+<h1 className='homehead'><b>Welcome To Recipe App</b></h1><br />
+<h4><b><i>Find Best Recipes For Cooking,Let's Cook.....</i></b></h4><br />
+<h5><b><i>Learn Quick,Easy & Delicious Recipes...</i></b></h5><br />
+<h6><b><i>Yummy.......<MoodRoundedIcon /></i></b></h6>
 </Base>
 <Footer />
 </div>

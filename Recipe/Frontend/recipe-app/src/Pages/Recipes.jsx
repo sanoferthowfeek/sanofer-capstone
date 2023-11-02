@@ -47,6 +47,7 @@ const handleDelete = async (id) => {
 };
 
   return (
+    <div className='allrecipes'>
     <Base title={"All Recipes"} >
       <div className='all'>
         <Button onClick={() => navigate("/add")}> <AddIcon /> Add Recipes</Button>
@@ -54,6 +55,10 @@ const handleDelete = async (id) => {
         <div className='allback'>
         <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
+      <br/>
+      <br />
+      <br/>
+      <br />
       {recipes && (
         <div>
           {recipes?.map((data) =>(
@@ -75,6 +80,7 @@ const handleDelete = async (id) => {
 
       } 
       </Base>
+      </div>
   )
 }
 

@@ -43,6 +43,7 @@ async  function postNewRecipes(){
 }
 
   return (
+    <div className='add'>
     <Base title={"Add Recipes"} >
       <div className='allback'>
         <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
@@ -102,6 +103,7 @@ onClick={postNewRecipes}>Add Recipes</Button>
 {msg ? <Typography color={"success"}>{msg}</Typography>:""}
     </form>
     </Base>
+    </div>
   )
 }
 
