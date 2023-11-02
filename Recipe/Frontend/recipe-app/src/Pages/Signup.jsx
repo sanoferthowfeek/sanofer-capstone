@@ -66,7 +66,7 @@ const Signup = () => {
     <Button 
     type="submit" 
     variant="contained"
-    style={{backgroundColor:"green",color:"white"}}
+    style={{backgroundColor:"#e91e63",color:"white"}}
     onClick={handleSignup}
     >
     SignUp

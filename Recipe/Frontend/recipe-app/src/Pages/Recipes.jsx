@@ -2,6 +2,10 @@ import React, {useState,useEffect } from 'react'
 import Base from '../Base/Base.jsx';
 import { Paper,Typography,Button}from '@mui/material';
 import {useNavigate} from 'react-router-dom';
+import EditIcon from '@mui/icons-material/Edit';
+import AddIcon from '@mui/icons-material/Add';
+import DeleteIcon from '@mui/icons-material/Delete';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 function Recipes(userRecipes,setUserRecipes) {
 
@@ -44,16 +48,11 @@ const handleDelete = async (id) => {
 
   return (
     <Base title={"All Recipes"} >
-      <div className='app'>
-        <Button 
-        edge="end"
-        color="primary"
-        arial-label="Add-recipes"
-        onClick={() => navigate("/add")}>Add Recipes</Button>
-        <Button variant="contained" color="success"
-    onClick={() =>navigate("/")} >
-  Back
-</Button>
+      <div className='all'>
+        <Button onClick={() => navigate("/add")}> <AddIcon /> Add Recipes</Button>
+        </div>
+        <div className='allback'>
+        <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
       {recipes && (
         <div>
@@ -66,8 +65,8 @@ const handleDelete = async (id) => {
              <h6>Steps: {data.steps}</h6>
              <p>Date: {data.date}</p>
              <p>Posted By: {data.user.username}</p>
-             <Button onClick={() =>navigate("/edit/${data._id}")}>Edit</Button>
-             <Button onClick={() => handleDelete (data._id)}>Delete</Button>
+             <Button onClick={() =>navigate("/edit/${data._id}")}> Edit <EditIcon /></Button>
+             <Button onClick={() => handleDelete (data._id)}> Delete  <DeleteIcon /></Button>
             </Paper>
           ))}
           {err ? <Typography color={"danger"}>{err}</Typography>:""}

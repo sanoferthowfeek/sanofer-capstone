@@ -2,6 +2,7 @@ import React, {useState,useEffect } from 'react'
 import {useNavigate} from 'react-router-dom';
 import { Button, TextField,Typography}from '@mui/material';
 import Base from '../Base/Base.jsx';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 function Addrecipes({userRecipes,setUserRecipes}) {
 
@@ -43,11 +44,8 @@ async  function postNewRecipes(){
 
   return (
     <Base title={"Add Recipes"} >
-      <div className='back' >
-      <Button variant="contained" color="success"
-      onClick={() =>navigate("/")} >
-      Back
-      </Button>
+      <div className='allback'>
+        <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
       <form>
  <TextField 
@@ -97,7 +95,7 @@ async  function postNewRecipes(){
         sx={{m:2}}/>
 
 <Button type="submit" variant='contained'
-style={{backgroundColor:"green",color:"white"}}
+style={{backgroundColor:"#512da8",color:"white"}}
 onClick={postNewRecipes}>Add Recipes</Button>
 
 {err ? <Typography color={"danger"}>{err}</Typography>:""}

@@ -1,39 +1,45 @@
-/* * {
-  background-image: url("https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+.home {
+  background-image: url("https://img.freepik.com/free-photo/fresh-colourful-ingredients-mexican-cuisine_23-2148254294.jpg?size=626&ext=jpg");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-} */
+opacity: 0.9;
+}
 
 
 footer {
   text-align: center;
   padding: 3px;
-  background-color: rgb(100, 37, 98);
+  background-color: #ff4081;
   color: white;
 }
 
 .nav {
-  background-color: transparent;
+  background-color:lightgrey;
   overflow: hidden;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration:none;
   font-size: 17px;
 }
 
 
 .nav :hover {
-  background-color: pink;
+  background-color: #f48fb1;
   color: black;
+  border-color: red;
+}
+
+.strong{
+  color: yellow;
 }
 
 .nav button {
   background-color:white ;
   margin: 20px;
-  border: 5px;
-  border-color: red;
-  border-style: double;
+  border: 2px;
+  border-color: pink;
+  border-style:solid;
 }
 
 .cards{
@@ -41,10 +47,11 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px;
+  width:100%;
 }
 
 .cards:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.3);
 }
 
 
@@ -55,42 +62,66 @@ img {
   border-radius: 5px 5px 0 0;
   padding: 5px;
   
+  
 }
 image_box{
-  width:100%;
+  width:25%;
+  height:25%;
   border-radius: 5px 5px 0 0;
 }
 
 
 .back{
-  background-color: lightpink;
+  /* background-color: lightpink;
   margin-right: 25px;
   display: flex;
   color: white;
   border-radius: 0px;
   border: none;
-  margin-top: 25px;
+  margin-top: 5px;
   padding: 10px;
   width: 60px;
   cursor: pointer;
   justify-content:flex-end;
   flex-direction: column;
+  float:right */
+  display:inline;
+  margin: 20px;
+  float:right;
+  width: 15 px;
+  height: 10 px;
+  background-color:white ;
+  border: 4px;
+  border-color: blue;
+  border-style:solid;
 }
 
 .back:hover{
-  background-color: rgb(4, 139, 192);
+  /* background-color: rgb(4, 139, 192); */
+  background-color: #f48fb1;
+  color: black;
+  border-color: red;
 }
 
 .signup{
-  background-color: blueviolet;
+  background-color: #fce4ec;
 }
 
 .login{
-  background-color: aqua;
+  background-color: #fce4ec;
+}
+.about{
+  background-color: #fce4ec;
 }
 
 .head{
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color:darkblue;
+  cursor: pointer;
+  font-size:x-large;
+  font-style: italic;
+  font-family:Georgia, 'Times New Roman', Times, serif
 }
 .heading{
   text-align: center;
@@ -102,5 +133,76 @@ image_box{
 }
 
 .app{
-  background-color: lightgray;
+  height: auto;
+  width: auto;
+}
+
+.home{
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  height: vh;
+  width: vw;
+  
+}
+
+.all{
+  display:inline;
+  margin: 20px;
+  float:right;
+  width: 15 px;
+  height: 10 px;
+  background-color:white ;
+  border: 4px;
+  border-color: blue;
+  color: black;
+  border-style:solid;
+}
+
+.allback{
+  display:inline;
+  margin: 20px;
+  float:right;
+  color: black;
+  width: 15 px;
+  height: 10 px;
+  background-color:white ;
+  border: 4px;
+  border-color: blue;
+  border-style:solid;
+}
+
+.all:hover{
+  background-color: #f48fb1;
+  color: black;
+  border-color: red;
+}
+
+.allback:hover{
+  background-color: #f48fb1;
+  color: black;
+  border-color: red;
+}
+
+.homehead{
+  text-align: center;
+}
+
+.menu{
+  /* display: inline-block; */
+  justify-content: center;
+  
+
+}
+
+.recipetitle{
+  color: darkblue;
+  font-weight: bolder;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  cursor: pointer;
+}
+.recipetitle:hover{
+  color: red;
+  font-weight: bolder;
+  font-family:cursive;
+  cursor: pointer;
 }

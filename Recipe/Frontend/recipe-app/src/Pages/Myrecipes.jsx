@@ -2,6 +2,7 @@ import React, {useState,useEffect } from 'react'
 import Base from '../Base/Base.jsx';
 import { Paper,Typography,Button}from '@mui/material';
 import {useNavigate} from 'react-router-dom';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 
 function Myrecipes({userRecipes,setUserRecipes}) {
@@ -30,12 +31,9 @@ function Myrecipes({userRecipes,setUserRecipes}) {
 
   return (
         <Base title={"My Recipes"} >
-         <div className='back'>
-         <Button variant="contained" color="success"
-           onClick={() =>navigate("/")} >
-            Back
-            </Button>
-            </div>
+         <div className='allback'>
+        <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
+      </div>
             {userRecipes && (
             <div>
             {userRecipes?.map((data) =>(

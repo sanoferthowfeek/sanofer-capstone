@@ -11,7 +11,7 @@ function Cards(props) {
              <img src= {props.img} alt="Recipe" />
              </div>
              <div className="details">
-             <h3>Recipe Name: {props.name}</h3>
+             <div className='recipetitle'><h3>Recipe Name: {props.name}</h3></div>
              <h5>Recipe Type: {props.type}</h5>
              <h5>Cooking Time: {props.time}</h5>
              <ul> <h6>Ingredients: 

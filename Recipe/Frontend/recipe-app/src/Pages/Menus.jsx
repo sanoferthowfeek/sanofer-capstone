@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import {Button} from '@mui/material';
 import {useNavigate} from 'react-router-dom';
 import { all,breakfast,cooldrinks,dessert,dinner,lunch,mojitos,nonveg,veg,pasta,salads,soups} from '../images/images.js';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 
 
@@ -140,15 +141,13 @@ const ImageMarked = styled('span')(({ theme }) => ({
 export default function Menus() {
   const navigate = useNavigate();
   return (
-     <div>
+     <div >
       <h2 className='heading'>Menus</h2>
-      <div className='back'>
-      <Button variant="contained" color="success"
-      onClick={() =>navigate("/")} >
-      Back
-      </Button>
+      <div className='allback'>
+        <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
-      <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
+      <div className='menu'>
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '150%' }}>
       {images.map((image) => (
       <ImageButton
           focusRipple
@@ -179,6 +178,7 @@ export default function Menus() {
           </ImageButton>
       ))}
     </Box>
+    </div>
     </div>
   );
 }

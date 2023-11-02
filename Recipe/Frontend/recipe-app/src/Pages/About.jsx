@@ -2,17 +2,16 @@ import React from 'react'
 import Base from '../Base/Base.jsx';
 import {useNavigate} from 'react-router-dom';
 import {Button}from '@mui/material';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 const About = () => {
   const navigate = useNavigate();
 
   return (
+    <div className='about'>
      <Base title={"Information About Recipe App"}> 
-      <div className='back'> 
-      <Button variant="contained" color="success"
-       onClick={() =>navigate("/")} >
-       Back
-      </Button>
+      <div className='allback'>
+        <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
       <h4 className='head'> The Global Recipe Apps market is anticipated to rise at a considerable rate during the forecast period, between 2023 and 2030. In 2022, the market is growing at a steady rate and with the rising adoption of strategies by key players, the market is expected to rise over the projected horizon. </h4>
       <br/>
@@ -34,6 +33,7 @@ const About = () => {
       <br/>
       <h4 className='head'>A study of 2,000 adults found that 71 per cent of people have “gone digital” in the kitchen with 23 per cent getting their cooking ideas from Facebook and 21 per cent from Instagram.</h4>
       </Base>
+      </div>
   )
 }
 

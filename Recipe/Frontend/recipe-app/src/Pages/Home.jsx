@@ -4,6 +4,7 @@ import Sidebar from '../Base/Sidebar.jsx'
 import Footer from '../Base/Footer.jsx';
 import {useNavigate} from 'react-router-dom';
 import { useEffect } from 'react';
+import MoodRoundedIcon from '@mui/icons-material/MoodRounded';
 
 const Home = () => {
 const navigate = useNavigate("/");
@@ -15,13 +16,13 @@ const navigate = useNavigate("/");
   // },[]);
 
   return (
-<div>
+<div className='home'>
 <Base > 
 <Sidebar/> 
-<h1>Welcome To Recipe App</h1>
-<h4>Find Best Recipes For Cooking,Let's Cook.....</h4>
-<h5>Learn Quick Easy & Delicious Recipes...</h5>
-<h6>Yummy.......</h6>
+<h1 className='homehead'><b>Welcome To Recipe App</b></h1>
+<h4><i>Find Best Recipes For Cooking,Let's Cook.....</i></h4>
+<h5><i>Learn Quick,Easy & Delicious Recipes...</i></h5>
+<h6><i>Yummy.......<MoodRoundedIcon /></i></h6>
 </Base>
 <Footer />
 </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 function Heading({title}) {
     const navigate = useNavigate();
@@ -9,6 +10,7 @@ function Heading({title}) {
           <div className='back'>
           <button type="button" 
                    onClick={() =>navigate("/menus")} >
+                    <ArrowBackIosIcon />
                    Back
            </button>
       </div>
