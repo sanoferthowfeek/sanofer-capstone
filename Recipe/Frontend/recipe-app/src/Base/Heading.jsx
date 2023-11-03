@@ -5,7 +5,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 function Heading({title}) {
     const navigate = useNavigate();
   return (
-    <div>
+    <div className='cardheader'>
         <h1 className='heading'>{title}</h1>
           <div className='back'>
           <button type="button" 

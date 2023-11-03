@@ -4,7 +4,7 @@ import {TextField,Button, Typography}from '@mui/material';
 import {useNavigate} from 'react-router-dom';
 
 const Signup = () => {
-  const [username,setUserName] =("");
+  const [username,setUsername] =("");
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
   const [err,setErr] = useState("");
@@ -40,17 +40,18 @@ const Signup = () => {
     <Base title={"Signup"}> 
     <br/>
     <br />
+    <div className='form'>
 
     <TextField 
-    
+    fullWidth
     label="Username" 
     value={username} 
-    onChange={(e) => setUserName(e.target.value)}
+    onChange={(e) => setUsername(e.target.value)}
     sx={{ m:2}} 
     type="text" />
 
     <TextField 
-  
+  fullWidth
     label="Email" 
     value={email} 
     onChange={(e) => setEmail(e.target.value)}
@@ -58,6 +59,7 @@ const Signup = () => {
     type="email" />
     
     <TextField 
+    fullWidth
     label="Password" 
     value={password} 
     onChange={(e) => setPassword(e.target.value)}
@@ -74,6 +76,7 @@ const Signup = () => {
     SignUp
     </Button>
     {err ? <Typography color={"danger"}>{err}</Typography>:""}
+    </div>
     </Base>
     </div>
   )

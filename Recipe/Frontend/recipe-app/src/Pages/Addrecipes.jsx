@@ -48,7 +48,7 @@ async  function postNewRecipes(){
       <div className='allback'>
         <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
-      <form>
+      <form className='form'>
  <TextField 
         fullWidth
         label="Recipe Name"

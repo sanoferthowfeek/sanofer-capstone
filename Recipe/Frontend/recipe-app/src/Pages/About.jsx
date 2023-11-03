@@ -2,10 +2,18 @@ import React from 'react'
 import Base from '../Base/Base.jsx';
 import {useNavigate} from 'react-router-dom';
 import {Button}from '@mui/material';
+import { useEffect } from 'react';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 const About = () => {
   const navigate = useNavigate();
+
+  useEffect(() =>{
+    if (!localStorage.getItem("token")) {
+      navigate("/login", {replace: true});
+    }
+  },[]);
+
 
   return (
     <div className='about'>

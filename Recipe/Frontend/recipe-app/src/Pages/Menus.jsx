@@ -143,7 +143,9 @@ export default function Menus() {
   const navigate = useNavigate();
   return (
      <div >
-      <Base />
+      <div className='menubase'>
+      <Base  />
+      </div>
       <h2 className='heading'>Menus</h2>
       <div className='allback'>
         <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>

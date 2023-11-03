@@ -71,8 +71,8 @@ const handleDelete = async (id) => {
              <h6>Steps: {data.steps}</h6>
              <p>Date: {data.date}</p>
              <p>Posted By: {data.user.username}</p>
-             <Button onClick={() =>navigate(`/edit/${data._id}`)}> Edit <EditIcon /></Button>
-             <Button onClick={() => handleDelete (data._id)}> Delete  <DeleteIcon /></Button>
+             <Button  style={{backgroundColor:"white",color:"green"}} onClick={() =>navigate(`/edit/${data._id}`)}> Edit <EditIcon /></Button>
+             <Button style={{backgroundColor:"white",color:"red"}} onClick={() => handleDelete (data._id)}> Delete  <DeleteIcon /></Button>
             </Paper>
           ))}
           {err ? <Typography color={"danger"}>{err}</Typography>:""}

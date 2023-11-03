@@ -20,9 +20,9 @@ const navigate = useNavigate("/");
 <Base > 
 <Sidebar/> 
 <h1 className='homehead'><b>Welcome To Recipe App</b></h1><br />
-<h4><b><i>Find Best Recipes For Cooking,Let's Cook.....</i></b></h4><br />
-<h5><b><i>Learn Quick,Easy & Delicious Recipes...</i></b></h5><br />
-<h6><b><i>Yummy.......<MoodRoundedIcon /></i></b></h6>
+<h2><b><i>Find Best Recipes For Cooking,Let's Cook.....</i></b></h2><br />
+<h3><b><i>Learn Quick,Easy & Delicious Recipes...</i></b></h3><br />
+<h4><b><i>Yummy.......<MoodRoundedIcon /></i></b></h4>
 </Base>
 <Footer />
 </div>

@@ -35,9 +35,9 @@ if(data.token) {
   return (
 <div className='login'>
 <Base title={"Login"} > 
-
+<div className='form'>
 <TextField 
- 
+ fullWidth
 label="Email" 
 value={email} 
 onChange={(e) => setEmail(e.target.value)}
@@ -45,6 +45,7 @@ sx={{ m:2}}
 type="email" />
 
 <TextField 
+fullWidth
 label="Password" 
 value={password} 
 onChange={(e) => setPassword(e.target.value)}
@@ -60,6 +61,7 @@ Login
 </Button>
 
 {err ? <Typography color={"danger"}>{err}</Typography>:""}
+</div>
 </Base>
 </div>
   )

@@ -1,5 +1,6 @@
-import mongoose,{mongo} from "mongoose";
+import mongoose from "mongoose";
 import { ObjectId } from "bson";
+
 const recipeSchema = new mongoose.Schema({
 recipename:{
     type:String,
@@ -32,3 +33,4 @@ ref:"user",
 
 const Recipe = mongoose.model("recipe",recipeSchema);
 export {Recipe};
+

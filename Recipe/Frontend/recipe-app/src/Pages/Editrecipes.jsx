@@ -42,7 +42,7 @@ async  function editNewRecipes(){
     ingredients,
     steps
   };
-  const res = await fetch('http://localhost:8000/api/recipes/user/edit/${id}',{
+  const res = await fetch(`http://localhost:8000/api/recipes/user/edit/${id}`,{
     method:"PUT",
     body: JSON.stringify(recipes),
     headers: {
@@ -67,7 +67,7 @@ async  function editNewRecipes(){
        <div className='allback'>
         <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
-      <form>
+      <form className='form'>
 <TextField 
         fullWidth
         label="Recipe Name"

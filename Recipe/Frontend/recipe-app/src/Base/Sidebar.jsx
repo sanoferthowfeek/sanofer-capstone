@@ -12,13 +12,11 @@ function Sidebar() {
   return (
     <div className='container-fluid'>
     <div className='column'>
-    <div className='col-auto min-vh-50 bg-light'>
     <div className='nav'>
             <button type="submit" onClick={() =>navigate("/recipes")}> <CollectionsBookmarkIcon />  All Recipes</button>
             <button type="submit" onClick={() =>navigate("/myrecipes")}><PageviewIcon />  My Recipes</button>
             <button type="submit" onClick={() =>navigate("/add")}> <AddToPhotosIcon />  Add Recipes</button>
             <button type="submit" onClick={() =>navigate("/edit/:id")}><EditIcon />  Edit Recipes</button>
-    </div>
     </div>
     </div>
     </div>
