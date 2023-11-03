@@ -48,13 +48,13 @@ const handleDelete = async (id) => {
 };
 
   return (
-    <div className='allrecipes'>
-    <Base title={"All Recipes"} >
+      <div className='allrecipes'>
+      <Base title={"All Recipes"} >
       <div className='all'>
-        <Button onClick={() => navigate("/add")}> <AddIcon /> Add Recipes</Button>
-        </div>
-        <div className='allback'>
-        <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
+      <Button onClick={() => navigate("/add")}> <AddIcon /> Add Recipes</Button>
+      </div>
+      <div className='allback'>
+      <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
       <br/>
       <br />
@@ -76,9 +76,8 @@ const handleDelete = async (id) => {
             </Paper>
           ))}
           {err ? <Typography color={"danger"}>{err}</Typography>:""}
-        </div>
+      </div>
       )
-
       } 
       </Base>
       </div>

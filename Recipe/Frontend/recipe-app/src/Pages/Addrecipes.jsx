@@ -43,10 +43,10 @@ async  function postNewRecipes(){
 }
 
   return (
-    <div className='add'>
-    <Base title={"Add Recipes"} >
+      <div className='add'>
+      <Base title={"Add Recipes"} >
       <div className='allback'>
-        <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
+      <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
       <form className='form'>
  <TextField 
@@ -101,10 +101,10 @@ onClick={postNewRecipes}>Add Recipes</Button>
 
 {err ? <Typography color={"danger"}>{err}</Typography>:""}
 {msg ? <Typography color={"success"}>{msg}</Typography>:""}
-    </form>
-    </Base>
-    </div>
-  )
+</form>
+</Base>
+</div>
+)
 }
 
 export default Addrecipes

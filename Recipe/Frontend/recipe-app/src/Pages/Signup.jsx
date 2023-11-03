@@ -32,10 +32,10 @@ const Signup = () => {
     }else{
       setErr(data.error);
     }
-      };
+    };
 
 
-  return (
+    return (
     <div className='signup'>
     <Base title={"Signup"}> 
     <br/>
@@ -51,7 +51,7 @@ const Signup = () => {
     type="text" />
 
     <TextField 
-  fullWidth
+    fullWidth
     label="Email" 
     value={email} 
     onChange={(e) => setEmail(e.target.value)}

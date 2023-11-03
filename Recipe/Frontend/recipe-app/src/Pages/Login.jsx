@@ -10,7 +10,7 @@ const Login = () => {
   const [err,setErr] = useState("");
   const navigate = useNavigate();
 
- const handleLogin = async () =>{
+const handleLogin = async () =>{
   
 const payload ={
   email,
@@ -30,9 +30,9 @@ if(data.token) {
 }else{
   setErr(data.error);
 }
-  };
+};
 
-  return (
+return (
 <div className='login'>
 <Base title={"Login"} > 
 <div className='form'>
@@ -64,7 +64,7 @@ Login
 </div>
 </Base>
 </div>
-  )
+)
 }
 
 export default Login;

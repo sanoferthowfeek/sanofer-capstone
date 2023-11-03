@@ -64,10 +64,10 @@ async  function editNewRecipes(){
   return (
     <div className='editrecipes'>
     <Base title={"Edit Recipes"} >
-       <div className='allback'>
-        <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
-      </div>
-      <form className='form'>
+    <div className='allback'>
+    <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
+    </div>
+    <form className='form'>
 <TextField 
         fullWidth
         label="Recipe Name"
@@ -121,9 +121,9 @@ EditRecipes</Button>
 
 {err ? <Typography color={"danger"}>{err}</Typography>:""}
 {msg ? <Typography color={"success"}>{msg}</Typography>:""}
-    </form>
-    </Base>
-    </div>
+</form>
+</Base>
+</div>
   )
 }
 

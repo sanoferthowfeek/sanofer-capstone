@@ -14,12 +14,11 @@ const About = () => {
     }
   },[]);
 
-
   return (
-    <div className='about'>
-     <Base title={"Information About Recipe App"}> 
+     <div className='about'>
+      <Base title={"Information About Recipe App"}> 
       <div className='allback'>
-        <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
+      <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
       <br />
       <br />

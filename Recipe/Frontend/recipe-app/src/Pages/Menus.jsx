@@ -142,19 +142,18 @@ const ImageMarked = styled('span')(({ theme }) => ({
 export default function Menus() {
   const navigate = useNavigate();
   return (
-     <div >
+      <div >
       <div className='menubase'>
       <Base  />
       </div>
       <h2 className='heading'>Menus</h2>
       <div className='allback'>
-        <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
+      <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
       <br />
       <br />
       <br />
       <br />
-     
       <div className='menu'>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '150%' }}>
       {images.map((image) => (
@@ -166,10 +165,10 @@ export default function Menus() {
             width: image.width,
           }}
         >
-         <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+        <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
         <ImageBackdrop className="MuiImageBackdrop-root" />
         <Image>
-          <Typography
+        <Typography
               component="span"
               variant="subtitle1"
               color="inherit"
@@ -181,13 +180,13 @@ export default function Menus() {
               }}
             >
               {image.title}
-              <ImageMarked className="MuiImageMarked-root" />
-          </Typography>
-          </Image>
-          </ImageButton>
-      ))}
-    </Box>
-    </div>
-    </div>
+        <ImageMarked className="MuiImageMarked-root" />
+        </Typography>
+        </Image>
+        </ImageButton>
+        ))}
+        </Box>
+        </div>
+        </div>
   );
 }

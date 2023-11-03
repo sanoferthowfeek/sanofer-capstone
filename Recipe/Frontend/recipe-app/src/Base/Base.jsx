@@ -11,82 +11,79 @@ import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 
 function Base({ title,children}) {
-  const navigate = useNavigate();
 
-  const handleLogout = () => {
+const navigate = useNavigate();
+
+const handleLogout = () => {
 localStorage.removeItem("token");
 navigate("/login");
   };
 
-  return (
-    <div>
-  <header>
-  <AppBar position="static" style={{backgroundColor:"#f50057",color:"white"}}>
-  <Toolbar variant="dense">
-  <Typography sx={{ mr: 2 }}>
-     <AppsIcon />
-     RECIPE_APP
-    </Typography>
+return (
+<div>
+<header>
+<AppBar position="static" style={{backgroundColor:"#f50057",color:"white"}}>
+<Toolbar variant="dense">
+<Typography sx={{ mr: 2 }}>
+<AppsIcon />
+RECIPE_APP
+</Typography>
 
-    <IconButton 
-    edge="end" color="inherit" aria-label="Home" 
-    onClick={() =>navigate("/")}
-    sx={{ mr: 2 }}>
-       <HomeIcon />  Home
-     
-    </IconButton>
+<IconButton 
+edge="end" color="inherit" aria-label="Home" 
+onClick={() =>navigate("/")}
+sx={{ mr: 2 }}>
+<HomeIcon />  Home
+</IconButton>
 
-    <IconButton 
-    edge="end" color="inherit" aria-label="Menus" 
-    onClick={() =>navigate("/menus")}
-    sx={{ mr: 2 }}>
-     <MenuBookIcon />  Menus
-      
-    </IconButton>
+<IconButton 
+edge="end" color="inherit" aria-label="Menus" 
+onClick={() =>navigate("/menus")}
+sx={{ mr: 2 }}>
+<MenuBookIcon />  Menus
+</IconButton>
 
-    <IconButton 
-    edge="end" color="inherit" aria-label="About" 
-    onClick={() =>navigate("/about")}
-    sx={{ mr: 2 }}>
-      <InfoIcon />
-     About
-     
-    </IconButton>
+<IconButton 
+edge="end" color="inherit" aria-label="About" 
+onClick={() =>navigate("/about")}
+sx={{ mr: 2 }}>
+<InfoIcon />
+About
+</IconButton>
 
-    <IconButton 
-    edge="end" color="inherit" aria-label="Signup" 
-    onClick={() =>navigate("/signup")}
-    sx={{ mr: 2 }}>
-      <VpnKeyIcon />
-     Signup
-     
-    </IconButton>
+<IconButton 
+edge="end" color="inherit" aria-label="Signup" 
+onClick={() =>navigate("/signup")}
+sx={{ mr: 2 }}>
+<VpnKeyIcon />
+Signup
+</IconButton>
 
-    <IconButton 
-    edge="end" color="inherit" aria-label="Login" 
-    onClick={() =>navigate("/login")}
-    sx={{ mr: 2 }}>
-           <LoginIcon />
-     Login
-    </IconButton>
+<IconButton 
+edge="end" color="inherit" aria-label="Login" 
+onClick={() =>navigate("/login")}
+sx={{ mr: 2 }}>
+<LoginIcon />
+Login
+</IconButton>
 
-    <IconButton 
-    edge="end" color="inherit" aria-label="Logout" 
-    onClick={handleLogout}
-    sx={{ mr: 2 }}>
-    <LogoutIcon />  Logout
-    </IconButton>
+<IconButton 
+edge="end" color="inherit" aria-label="Logout" 
+onClick={handleLogout}
+sx={{ mr: 2 }}>
+<LogoutIcon />  Logout
+</IconButton>
 
-  <AccountCircleIcon />
-  </Toolbar>
-  </AppBar>
-  </header>
-  <main>
-  <h1 className='basehead'>{title}</h1>
-  <div className='content'>{children}</div>
-  </main>
-  </div>
-  );
+<AccountCircleIcon />
+</Toolbar>
+</AppBar>
+</header>
+<main>
+<h1 className='basehead'>{title}</h1>
+<div className='content'>{children}</div>
+</main>
+</div>
+);
 }
 
 export default Base;

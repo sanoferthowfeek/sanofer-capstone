@@ -10,12 +10,12 @@ const Home = () => {
 const navigate = useNavigate("/");
 
   useEffect(() =>{
-    if (!localStorage.getItem("token")) {
-      navigate("/login", {replace: true});
+  if (!localStorage.getItem("token")) {
+  navigate("/login", {replace: true});
     }
   },[]);
 
-  return (
+return (
 <div className='home'>
 <Base > 
 <Sidebar/> 
@@ -26,8 +26,7 @@ const navigate = useNavigate("/");
 </Base>
 <Footer />
 </div>
-
-  )
+)
 }
 
 export default Home
