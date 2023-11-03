@@ -43,7 +43,7 @@ const Signup = () => {
 
     <TextField 
     
-    label="username" 
+    label="Username" 
     value={username} 
     onChange={(e) => setUserName(e.target.value)}
     sx={{ m:2}} 
@@ -51,15 +51,14 @@ const Signup = () => {
 
     <TextField 
   
-    label="email" 
+    label="Email" 
     value={email} 
     onChange={(e) => setEmail(e.target.value)}
     sx={{ m:2}} 
     type="email" />
     
     <TextField 
-    
-    label="password" 
+    label="Password" 
     value={password} 
     onChange={(e) => setPassword(e.target.value)}
     sx={{ m:2}} 

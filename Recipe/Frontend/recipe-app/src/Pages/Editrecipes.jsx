@@ -18,7 +18,10 @@ function Editrecipes({userRecipes,setUserRecipes}) {
   const {id} = useParams();
 
 useEffect (() => {
-const data = userRecipes.find((data) =>data._id === id) 
+  console.log(id);
+const data = userRecipes.find((data) =>data._id.toString() == id) 
+console.log(data);
+console.log(userRecipes);
 if(data){
   setRecipename(data.recipename)
   setRecipetype(data.recipetype)

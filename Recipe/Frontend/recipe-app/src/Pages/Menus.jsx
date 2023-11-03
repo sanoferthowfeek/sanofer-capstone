@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
+import Base from '../Base/Base.jsx';
 import {Button} from '@mui/material';
 import {useNavigate} from 'react-router-dom';
 import { all,breakfast,cooldrinks,dessert,dinner,lunch,mojitos,nonveg,veg,pasta,salads,soups} from '../images/images.js';
@@ -142,10 +143,16 @@ export default function Menus() {
   const navigate = useNavigate();
   return (
      <div >
+      <Base />
       <h2 className='heading'>Menus</h2>
       <div className='allback'>
         <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+     
       <div className='menu'>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '150%' }}>
       {images.map((image) => (

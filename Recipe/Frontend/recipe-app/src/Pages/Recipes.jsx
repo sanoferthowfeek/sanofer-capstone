@@ -7,7 +7,7 @@ import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
-function Recipes(userRecipes,setUserRecipes) {
+function Recipes({userRecipes,setUserRecipes}) {
 
 const [recipes,setRecipes] = useState([]);
 const [err,setErr] = useState("");
@@ -26,6 +26,7 @@ const fetchData = async() =>{
     setErr(data.error);
   } else {
     setRecipes(data.data);
+    setUserRecipes(data.data);
   }
 };
 fetchData();
@@ -33,7 +34,7 @@ fetchData();
 
 
 const handleDelete = async (id) => {
-  const res = await fetch ('http://localhost:8000/api/recipes/user/delete/${id}', {
+  const res = await fetch (`http://localhost:8000/api/recipes/user/delete/${id}`, {
     method:"DELETE",
     headers: {
       "Content-Type":"application/json",
@@ -60,7 +61,7 @@ const handleDelete = async (id) => {
       <br/>
       <br />
       {recipes && (
-        <div>
+        <div className='recip'>
           {recipes?.map((data) =>(
             <Paper elevation={6} key={data.id}>
             <h3>Recipe Name: {data.recipename}</h3>
@@ -70,7 +71,7 @@ const handleDelete = async (id) => {
              <h6>Steps: {data.steps}</h6>
              <p>Date: {data.date}</p>
              <p>Posted By: {data.user.username}</p>
-             <Button onClick={() =>navigate("/edit/${data._id}")}> Edit <EditIcon /></Button>
+             <Button onClick={() =>navigate(`/edit/${data._id}`)}> Edit <EditIcon /></Button>
              <Button onClick={() => handleDelete (data._id)}> Delete  <DeleteIcon /></Button>
             </Paper>
           ))}

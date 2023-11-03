@@ -36,22 +36,22 @@ const [userRecipes,setUserRecipes] = useState([]);
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/recipes" element={<Recipes />} />
+          <Route path="/recipes" element={<Recipes userRecipes={userRecipes} setUserRecipes={setUserRecipes} />} />
           <Route path="/myrecipes" element={<Myrecipes userRecipes={userRecipes} setUserRecipes={setUserRecipes} />} />
           <Route path="/add" element={<Addrecipes userRecipes={userRecipes} setUserRecipes={setUserRecipes} />} />
           <Route path="/edit/:id" element={<Editrecipes userRecipes={userRecipes} setUserRecipes={setUserRecipes} />} />
           <Route path="/all" element={<All />} />
           <Route path="/breakfast" element={<Breakfast />} />
-          <Route path="/cooldrinks" element={<Cooldrinks />} />
+          <Route path="/cool drinks" element={<Cooldrinks />} />
           <Route path="/dinner" element={<Dinner />} />
           <Route path="/dessert" element={<Dessert />} />
           <Route path="/lunch" element={<Lunch />} />
           <Route path="/mojitos" element={<Mojitos />} />
-          <Route path="/nonveg" element={<Nonveg />} />
+          <Route path="/non-veg" element={<Nonveg />} />
           <Route path="/pasta" element={<Pasta />} />
           <Route path="/salads" element={<Salads />} />
           <Route path="/soups" element={<Soups />} />
-          <Route path="/vegmeals" element={<Vegmeals />} />
+          <Route path="/veg-meals" element={<Vegmeals />} />
           </Routes>
           </BrowserRouter>
           </div>

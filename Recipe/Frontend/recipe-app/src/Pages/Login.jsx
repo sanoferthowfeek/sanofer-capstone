@@ -38,18 +38,17 @@ if(data.token) {
 
 <TextField 
  
-label="email" 
+label="Email" 
 value={email} 
 onChange={(e) => setEmail(e.target.value)}
-sx={{ m:2}} 
+sx={{ m:2}}
 type="email" />
 
 <TextField 
- 
-label="password" 
+label="Password" 
 value={password} 
 onChange={(e) => setPassword(e.target.value)}
-sx={{ m:2}} 
+sx={{ m:2}}
 type="password" />
 
 <Button 
