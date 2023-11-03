@@ -4,7 +4,7 @@ import {TextField,Button, Typography}from '@mui/material';
 import {useNavigate} from 'react-router-dom';
 
 const Signup = () => {
-  const [username,setUsername] =("");
+  const [username,setUsername] =useState("");
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
   const [err,setErr] = useState("");
@@ -28,7 +28,7 @@ const Signup = () => {
     const data =await res.json();
     if(data.token) {
       localStorage.setItem("token",data.token);
-      navigate("/");
+      navigate("/login");
     }else{
       setErr(data.error);
     }
