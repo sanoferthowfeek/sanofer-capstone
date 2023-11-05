@@ -15,7 +15,7 @@ const navigate = useNavigate();
 
 useEffect(() =>{
 const fetchData = async() =>{
-  const res =await fetch("http://localhost:8000/api/recipes/all",{
+  const res =await fetch("https://recipe-9zt9.onrender.com/api/recipes/all",{
     method:"GET",
     headers: {
       "x-auth-token": localStorage.getItem("token"),
@@ -34,7 +34,7 @@ fetchData();
 
 
 const handleDelete = async (id) => {
-  const res = await fetch (`http://localhost:8000/api/recipes/user/delete/${id}`, {
+  const res = await fetch (`https://recipe-9zt9.onrender.com/api/recipes/user/delete/${id}`, {
     method:"DELETE",
     headers: {
       "Content-Type":"application/json",

@@ -18,7 +18,7 @@ const Signup = () => {
       email,
       password,
     };
-    const res =await fetch('http://localhost:8000/api/user/signup',{
+    const res =await fetch('https://recipe-9zt9.onrender.com/api/user/signup',{
     method: "POST",
     body: JSON.stringify(payload),
     headers: {
