@@ -1,4 +1,5 @@
 import React from 'react'
+import Share from './Pages/Share.jsx';
 
 
 function Cards(props) {
@@ -26,6 +27,10 @@ function Cards(props) {
             <li>{props.step3}</li>
             <li>{props.step4}</li>
             </h6></ol>
+            
+            <div>
+            <Share />
+            </div>
             </div>
            </div>
     </div>

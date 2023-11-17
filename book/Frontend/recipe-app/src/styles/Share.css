@@ -1,0 +1,26 @@
+.share-icon-collections {
+    background-color:white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    }
+
+    .share-icon1:hover {
+        background-color:blue;
+    }
+
+    .share-icon2:hover {
+        background-color:rgb(44, 147, 85);
+    }
+
+    .share-icon3:hover {
+        background-color:red;
+    }
+
+    .share-icon4:hover {
+        background-color:darkcyan;
+    }
+
+    .share-icon5:hover {
+        background-color:lightcoral;
+    }
