@@ -27,6 +27,7 @@ function Cards(props) {
             </h6></ol>
             </div>
            </div>
+           
     </div>
   )
 }
