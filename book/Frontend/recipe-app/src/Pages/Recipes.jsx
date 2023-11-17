@@ -6,6 +6,8 @@ import EditIcon from '@mui/icons-material/Edit';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import Share from '../Pages/Share.jsx';
+
 
 function Recipes({userRecipes,setUserRecipes}) {
 
@@ -73,6 +75,7 @@ const handleDelete = async (id) => {
              <p>Posted By: {data.user.username}</p>
              <Button  style={{backgroundColor:"white",color:"green"}} onClick={() =>navigate(`/edit/${data._id}`)}> Edit <EditIcon /></Button>
              <Button style={{backgroundColor:"white",color:"red"}} onClick={() => handleDelete (data._id)}> Delete  <DeleteIcon /></Button>
+             <Share />
             </Paper>
           ))}
           {err ? <Typography color={"danger"}>{err}</Typography>:""}

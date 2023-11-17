@@ -20,7 +20,7 @@ navigate("/signup");
   };
 
 return (
-<div>
+<div >
 <header>
 <AppBar position="static" style={{backgroundColor:"#f50057",color:"white"}}>
 <Toolbar variant="dense">

@@ -1,5 +1,6 @@
 import React from "react"
 import '../styles/Share.css';
+import ShareIcon from '@mui/icons-material/Share';
 
 
 function Share({description}) {
@@ -17,7 +18,7 @@ function Share({description}) {
 
   return (
     <>
-    Share on: 
+    Share on <ShareIcon  color="success" />
     <div  className="share-icon-collections">
     {/* Facebook */}
     <a href={`https://www.facebook.com/sharer/sharer.php?u=${url}`} target="_blank">
