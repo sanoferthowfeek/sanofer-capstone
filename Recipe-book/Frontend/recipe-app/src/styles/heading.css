@@ -1,0 +1,22 @@
+.back{
+    display:inline;
+    margin: 20px;
+    float:right;
+    width: 15 px;
+    height: 10 px;
+    background-color:white ;
+    border: 4px;
+    border-color: blue;
+    border-style:solid;
+  }
+  
+  .back:hover{
+    background-color: #f48fb1;
+    color: black;
+    border-color: red;
+  }
+
+  .heading{
+    text-align: center;
+    cursor: pointer;
+  }

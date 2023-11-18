@@ -1,6 +1,7 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import '../styles/heading.css'
 
 function Heading({title}) {
     const navigate = useNavigate();

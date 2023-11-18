@@ -5,6 +5,7 @@ import AddToPhotosIcon from '@mui/icons-material/AddToPhotos';
 import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
 import EditIcon from '@mui/icons-material/Edit';
 import PageviewIcon from '@mui/icons-material/Pageview';
+import '../styles/sidebar.css'
 
 
 function Sidebar() {

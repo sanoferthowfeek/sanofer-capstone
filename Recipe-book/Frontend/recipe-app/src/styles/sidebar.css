@@ -1,0 +1,13 @@
+.nav :hover {
+    background-color: #f48fb1;
+    color: black;
+    border-color: red;
+  }
+
+  .nav button {
+    background-color:white ;
+    margin: 20px;
+    border: 2px;
+    border-color: pink;
+    border-style:solid;
+  }

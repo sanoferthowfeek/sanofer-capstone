@@ -5,6 +5,7 @@ import Footer from '../Base/Footer.jsx';
 import {useNavigate} from 'react-router-dom';
 import { useEffect } from 'react';
 import MoodRoundedIcon from '@mui/icons-material/MoodRounded';
+import '../styles/home.css'
 
 const Home = () => {
 const navigate = useNavigate("/");

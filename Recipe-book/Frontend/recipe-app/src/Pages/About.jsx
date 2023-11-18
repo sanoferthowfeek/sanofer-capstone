@@ -4,6 +4,7 @@ import {useNavigate} from 'react-router-dom';
 import {Button}from '@mui/material';
 import { useEffect} from 'react';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import '../styles/about.css'
 
 const About = () => {
   const navigate = useNavigate();
