@@ -25,6 +25,8 @@ dataBaseConnection();
 app.use("/api/user",userRouter);
 app.use("/api/recipes",isAuthorized,recipeRouter);
 
+
+
 //welcome api for render
 app.get("/",(req,res) =>{
 res.send("Welcome To Recipe App");

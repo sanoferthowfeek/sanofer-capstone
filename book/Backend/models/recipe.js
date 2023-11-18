@@ -28,7 +28,8 @@ date:{
 user:{
     type:ObjectId,
 ref:"user",
-}
+},
+
 });
 
 const Recipe = mongoose.model("recipe",recipeSchema);
