@@ -14,6 +14,7 @@ export function postNewRecipe(req){
         ...req.body,
         date:updatedDate,
         user: req.user._id,
+        
     }).save();
 }
 

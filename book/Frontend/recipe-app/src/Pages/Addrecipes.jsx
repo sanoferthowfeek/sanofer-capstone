@@ -14,6 +14,9 @@ function Addrecipes({userRecipes,setUserRecipes}) {
   const[steps,setSteps] = useState("");
   const [err,setErr] = useState("");
   const[msg,setMsg] = useState("");
+  const [image, setImage] = useState("");
+  const[comments,setComments] = useState("");
+
   
 //api integration
 
@@ -23,9 +26,11 @@ async  function postNewRecipes(){
     recipetype,
     timings,
     ingredients,
-    steps
+    steps,
+    imageurl,
+    comments
   };
-  const res = await fetch('https://recipe-9zt9.onrender.com/api/recipes/user/add',{
+  const res = await fetch('https://localhost:8000/api/recipes/user/add',{
     method:"POST",
     body: JSON.stringify(recipes),
     headers: {
@@ -94,6 +99,17 @@ async  function postNewRecipes(){
         onChange={(e) =>setSteps(e.target.value)}
         inputProps={{sx: {height:100}}}
         sx={{m:2}}/>
+
+<TextField 
+        fullWidth
+        label="Comments"
+        variant="outlined"
+        type="text" 
+        value={comments}
+        onChange={(e) =>setComments(e.target.value)}
+        sx={{m:2}}/>       
+
+<input multiple onChange={(e) => setImage(e.target.files[0])} type="file" />        
 
 <Button type="submit" variant='contained'
 style={{backgroundColor:"#512da8",color:"white"}}

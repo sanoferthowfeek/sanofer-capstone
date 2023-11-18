@@ -43,6 +43,7 @@ router.get("/user/all", async (req,res) =>{
 
     // add new user recipes
 router.post("/user/add", async (req,res) =>{
+  
     try {
         const newpost = await postNewRecipe(req);
         if(!newpost) {

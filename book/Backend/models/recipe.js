@@ -29,7 +29,12 @@ user:{
     type:ObjectId,
 ref:"user",
 },
-
+imageUrl: {
+    type:String,
+},
+comments:{
+    type:String,
+}
 });
 
 const Recipe = mongoose.model("recipe",recipeSchema);

@@ -6,6 +6,8 @@ import  { isAuthorized} from "./middlewares/auth.js";
 import dotenv from "dotenv";
 import { dataBaseConnection } from "./db.js";
 import cors from "cors";
+import multer from "multer";
+
 
 //configure env variables
 dotenv.config();
@@ -13,17 +15,19 @@ dotenv.config();
 //server setup
 const app = express();
 const PORT = process.env.PORT ;
+const upload = multer({ dest: 'uploads/' })
 
 //middlewares
 app.use(express.json());
 app.use(cors());
+app.use('/uploads', express.static('uploads'))
 
 //database connection
 dataBaseConnection();
 
 //routes
 app.use("/api/user",userRouter);
-app.use("/api/recipes",isAuthorized,recipeRouter);
+app.use("/api/recipes", upload.single('image'),isAuthorized,recipeRouter);
 
 
 

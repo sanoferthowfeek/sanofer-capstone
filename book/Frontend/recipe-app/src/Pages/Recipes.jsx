@@ -17,7 +17,7 @@ const navigate = useNavigate();
 
 useEffect(() =>{
 const fetchData = async() =>{
-  const res =await fetch("https://recipe-9zt9.onrender.com/api/recipes/all",{
+  const res =await fetch("https://localhost:8000/api/recipes/all",{
     method:"GET",
     headers: {
       "x-auth-token": localStorage.getItem("token"),
@@ -66,12 +66,14 @@ const handleDelete = async (id) => {
         <div className='recip'>
           {recipes?.map((data) =>(
             <Paper elevation={6} key={data.id}>
+               <img width="100%" height="200px" src={`${data.imageUrl}`} />
             <h3>Recipe Name: {data.recipename}</h3>
              <h4>Recipe Category: {data.recipetype}</h4>
              <h4>Preparation Time: {data.timings}</h4>
              <h5>Ingredients: {data.ingredients} </h5>
              <h6>Steps: {data.steps}</h6>
              <p>Date: {data.date}</p>
+             <p>Comments: {data.comments}</p>
              <p>Posted By: {data.user.username}</p>
              <Button  style={{backgroundColor:"white",color:"green"}} onClick={() =>navigate(`/edit/${data._id}`)}> Edit <EditIcon /></Button>
              <Button style={{backgroundColor:"white",color:"red"}} onClick={() => handleDelete (data._id)}> Delete  <DeleteIcon /></Button>

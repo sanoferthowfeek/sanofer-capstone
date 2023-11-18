@@ -3,7 +3,7 @@ import Base from '../Base/Base.jsx';
 import { Paper,Typography,Button}from '@mui/material';
 import {useNavigate} from 'react-router-dom';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-
+import Share from '../Pages/Share.jsx';
 
 function Myrecipes({userRecipes,setUserRecipes}) {
 
@@ -49,8 +49,10 @@ function Myrecipes({userRecipes,setUserRecipes}) {
              <h5>Ingredients: {data.ingredients} </h5>
              <h6>Steps: {data.steps}</h6>
              <p>Date: {data.date}</p>
+             <p>Comments: {data.comments}</p>
              <p>Posted By: {data.user.username}</p>
              <p>Email: {data.user.email}</p>
+             <Share />
             </Paper>
              ))}
              {err ? <Typography color={"danger"}>{err}</Typography>:""}
