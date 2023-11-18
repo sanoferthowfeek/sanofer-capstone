@@ -1,11 +1,10 @@
 import React, {useState,useEffect } from 'react'
-import {useNavigate, useParams} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import { Button, TextField,Typography}from '@mui/material';
 import Base from '../Base/Base.jsx';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
-
-function Editrecipes({userRecipes,setUserRecipes}) {
+function Addrecipes({userRecipes,setUserRecipes}) {
 
   const navigate = useNavigate();
   const[recipename,setRecipename] = useState("");
@@ -14,36 +13,25 @@ function Editrecipes({userRecipes,setUserRecipes}) {
   const[ingredients,setIngredients] = useState("");
   const[steps,setSteps] = useState("");
   const [err,setErr] = useState("");
-  const [msg,setMsg] = useState("");
-  const {id} = useParams();
-
-useEffect (() => {
-  console.log(id);
-const data = userRecipes.find((data) =>data._id.toString() == id) 
-console.log(data);
-console.log(userRecipes);
-if(data){
-  setRecipename(data.recipename)
-  setRecipetype(data.recipetype)
-  setTimings(data.timings)
-  setIngredients(data.ingredients)
-  setSteps(data.steps)
-}
-},[id,userRecipes]);
+  const[msg,setMsg] = useState("");
+  const [image, setImage] = useState("");
+  const[comments,setComments] = useState("");
 
   
 //api integration
 
-async  function editNewRecipes(){
+async  function postNewRecipes(){
   const recipes ={
     recipename,
     recipetype,
     timings,
     ingredients,
-    steps
+    steps,
+    imageurl,
+    comments
   };
-  const res = await fetch(`https://recipe-9zt9.onrender.com/api/recipes/user/edit/${id}`,{
-    method:"PUT",
+  const res = await fetch('https://recipebook-li3m.onrender.com/api/recipes/user/add',{
+    method:"POST",
     body: JSON.stringify(recipes),
     headers: {
       "Content-Type":"application/json",
@@ -54,21 +42,19 @@ async  function editNewRecipes(){
   if(!data.data){
     setErr(data.error);
   } else {
-    const editableIndex = userRecipes?.findIndex((data) =>data._id === id);
-    userRecipes[editableIndex] = data.data;
-    await setUserRecipes ([...userRecipes]);
-    setMsg(data.message);
+    setUserRecipes([...userRecipes,data.data]);
+    setMsg(data.msg)
   }
 }
 
   return (
-    <div className='editrecipes'>
-    <Base title={"Edit Recipes"} >
-    <div className='allback'>
-    <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
-    </div>
-    <form className='form'>
-<TextField 
+      <div className='add'>
+      <Base title={"Add Recipes"} >
+      <div className='allback'>
+      <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
+      </div>
+      <form className='form'>
+ <TextField 
         fullWidth
         label="Recipe Name"
         variant="outlined"
@@ -114,17 +100,27 @@ async  function editNewRecipes(){
         inputProps={{sx: {height:100}}}
         sx={{m:2}}/>
 
+<TextField 
+        fullWidth
+        label="Comments"
+        variant="outlined"
+        type="text" 
+        value={comments}
+        onChange={(e) =>setComments(e.target.value)}
+        sx={{m:2}}/>       
+
+<input multiple onChange={(e) => setImage(e.target.files[0])} type="file" />        
+
 <Button type="submit" variant='contained'
 style={{backgroundColor:"#512da8",color:"white"}}
-onClick={editNewRecipes}>
-EditRecipes</Button>
+onClick={postNewRecipes}>Add Recipes</Button>
 
 {err ? <Typography color={"danger"}>{err}</Typography>:""}
 {msg ? <Typography color={"success"}>{msg}</Typography>:""}
 </form>
 </Base>
 </div>
-  )
+)
 }
 
-export default Editrecipes
+export default Addrecipes

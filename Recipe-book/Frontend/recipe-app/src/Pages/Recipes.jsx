@@ -17,7 +17,7 @@ const navigate = useNavigate();
 
 useEffect(() =>{
 const fetchData = async() =>{
-  const res =await fetch("https://localhost:8000/api/recipes/all",{
+  const res =await fetch("https://recipebook-li3m.onrender.com/api/recipes/all",{
     method:"GET",
     headers: {
       "x-auth-token": localStorage.getItem("token"),
@@ -36,7 +36,7 @@ fetchData();
 
 
 const handleDelete = async (id) => {
-  const res = await fetch (`https://recipe-9zt9.onrender.com/api/recipes/user/delete/${id}`, {
+  const res = await fetch (`https://recipebook-li3m.onrender.com/api/recipes/user/delete/${id}`, {
     method:"DELETE",
     headers: {
       "Content-Type":"application/json",
@@ -66,7 +66,7 @@ const handleDelete = async (id) => {
         <div className='recip'>
           {recipes?.map((data) =>(
             <Paper elevation={6} key={data.id}>
-               <img width="100%" height="200px" src={`${data.imageUrl}`} />
+               {/* <img width="100%" height="200px" src={data.imageUrl}/> */}
             <h3>Recipe Name: {data.recipename}</h3>
              <h4>Recipe Category: {data.recipetype}</h4>
              <h4>Preparation Time: {data.timings}</h4>
