@@ -1,6 +1,6 @@
 import React from 'react'
 import Share from './Pages/Share.jsx';
-
+import './styles/cards.css'
 
 function Cards(props) {
   return (

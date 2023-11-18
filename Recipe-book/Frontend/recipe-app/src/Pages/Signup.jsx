@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Base from '../Base/Base.jsx';
 import {TextField,Button, Typography}from '@mui/material';
 import {useNavigate} from 'react-router-dom';
+import '../styles/signup.css'
 
 const Signup = () => {
   const [username,setUsername] =useState("");

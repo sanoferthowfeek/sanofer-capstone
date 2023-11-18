@@ -1,15 +1,8 @@
-.about{
-    background-color: #fce4ec;
-  }
-  
-  .head{
-    justify-content: center;
-    align-items: center;
-    color:darkblue;
-    cursor: pointer;
-    font-size:x-large;
-    font-style: italic;
-    font-family:Georgia, 'Times New Roman', Times, serif
+.menu{
+    max-width: 500px;
+    margin: auto;
+    place-items: center;
+    min-width: 320px;
   }
 
   .allback{

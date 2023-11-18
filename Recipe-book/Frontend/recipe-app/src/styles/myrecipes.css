@@ -1,16 +1,8 @@
-.about{
-    background-color: #fce4ec;
+.myrecipes{
+    height: 100vh;
+    width: 100vw;
   }
-  
-  .head{
-    justify-content: center;
-    align-items: center;
-    color:darkblue;
-    cursor: pointer;
-    font-size:x-large;
-    font-style: italic;
-    font-family:Georgia, 'Times New Roman', Times, serif
-  }
+
 
   .allback{
     display:inline;

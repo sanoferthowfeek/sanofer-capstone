@@ -3,6 +3,7 @@ import {useNavigate} from 'react-router-dom';
 import { Button, TextField,Typography}from '@mui/material';
 import Base from '../Base/Base.jsx';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import '../styles/add.css'
 
 function Addrecipes({userRecipes,setUserRecipes}) {
 

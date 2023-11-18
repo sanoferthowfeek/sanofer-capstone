@@ -9,6 +9,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
+import '../styles/base.css'
 
 function Base({ title,children}) {
 

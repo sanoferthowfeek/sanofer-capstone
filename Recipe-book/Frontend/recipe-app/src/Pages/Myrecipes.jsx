@@ -4,6 +4,7 @@ import { Paper,Typography,Button}from '@mui/material';
 import {useNavigate} from 'react-router-dom';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import Share from '../Pages/Share.jsx';
+import '../styles/myrecipes.css'
 
 function Myrecipes({userRecipes,setUserRecipes}) {
 

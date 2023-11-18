@@ -9,6 +9,7 @@ import {useNavigate} from 'react-router-dom';
 import { all,breakfast,cooldrinks,dessert,dinner,lunch,mojitos,nonveg,veg,pasta,salads,soups} from '../images/images.js';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import Filter from '../Filter.jsx';
+import '../styles/menu.css'
 
 
 

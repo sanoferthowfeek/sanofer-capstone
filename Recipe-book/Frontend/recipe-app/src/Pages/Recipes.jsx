@@ -7,6 +7,7 @@ import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import Share from '../Pages/Share.jsx';
+import '../styles/recipes.css'
 
 
 function Recipes({userRecipes,setUserRecipes}) {
