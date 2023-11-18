@@ -1,6 +1,7 @@
 import { User } from "../models/user.js"
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
+import {client} from '../redis.js'
 dotenv.config();
 
 export async function getUserByEmail(request) {
