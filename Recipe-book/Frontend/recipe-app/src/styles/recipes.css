@@ -10,11 +10,14 @@
     border-color: blue;
     border-style:solid;
   }
-  
+  .allrecipes{
+    height: 100vh;
+    width: 100vw;
+  }
   
   
   .allback:hover{
-    background-color: #f48fb1;
+    background-color: #ff7043;
     color: black;
     border-color: red;
   }

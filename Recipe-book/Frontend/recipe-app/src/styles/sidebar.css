@@ -1,7 +1,7 @@
 .nav :hover {
     background-color: #ff7043;
     color: black;
-    border-color: red;
+    border-color: blue;
   }
 
   .nav button {
