@@ -21,8 +21,8 @@ return (
 <div className='home'>
 <Base />
 <h1 className='homehead'><b>Welcome To Recipe Book</b></h1><br />
-<h2><b><i>Find Best Recipes For Cooking,Let's Cook.....</i></b></h2><br />
-<h3><b><i>Learn Quick,Easy & Delicious Recipes...</i></b></h3><br />
+<h2><b><i>Find Best Recipes For Cooking.....</i></b></h2><br />
+<h3><b><i>Learn Easy & Delicious Recipes...</i></b></h3><br />
 <h4><b><i>Yummy.......<MoodRoundedIcon /></i></b></h4>
 
 <Footer />
