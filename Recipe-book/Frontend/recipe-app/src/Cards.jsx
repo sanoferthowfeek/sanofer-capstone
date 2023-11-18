@@ -1,19 +1,25 @@
 import React from 'react'
 import Share from './Pages/Share.jsx';
 import './styles/cards.css'
+import Card from 'react-bootstrap/Card';
+
 
 function Cards(props) {
   return (
-    <div>
-            <div className="cards">
-            <div >
-             <img  className="image_box" src= {props.img} alt="Recipe" />
-             </div>
-             <div className="details">
-             <div className='recipetitle'><h3>Recipe Name: {props.name}</h3></div>
-             <h5>Recipe Category: {props.type}</h5>
-             <h5>Preparation Time: {props.time}</h5>
-             <ul> <h6>Ingredients: 
+    <div className="cards" >
+            
+           <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src= {props.img} alt="Recipe"/>
+      <Card.Body>
+        <Card.Title>
+        <h4 className='recipetitle'>Recipe Name: {props.name}</h4>
+        
+        </Card.Title>
+        <Card.Text>
+        <b>Recipe Category: {props.type}</b><br />
+       <b>Preparation Time: {props.time}</b> 
+        </Card.Text>
+        <ul> <h6>Ingredients: 
             <li>{props.ingredient} </li> 
             <li>{props.ingredient1}</li> 
             <li>{props.ingredient2}</li>
@@ -27,12 +33,10 @@ function Cards(props) {
             <li>{props.step3}</li>
             <li>{props.step4}</li>
             </h6></ol>
-            
-            <div>
-            <Share />
-            </div>
-            </div>
-           </div>
+        <Share />
+      </Card.Body>
+    </Card>
+
     </div>
   )
 }
