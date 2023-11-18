@@ -1,5 +1,5 @@
 .nav :hover {
-    background-color: #f48fb1;
+    background-color: #ff7043;
     color: black;
     border-color: red;
   }
@@ -8,6 +8,6 @@
     background-color:white ;
     margin: 20px;
     border: 2px;
-    border-color: pink;
+    border-color: orange;
     border-style:solid;
   }
