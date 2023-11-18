@@ -12,7 +12,7 @@ function Myrecipes({userRecipes,setUserRecipes}) {
 
   useEffect(() =>{
     const fetchData = async() =>{
-      const res =await fetch("http://localhost:8000/api/recipes/user/all",{
+      const res =await fetch("https://recipe-books.onrender.com/api/recipes/user/all",{
         method:"GET",
         headers: {
           "x-auth-token": localStorage.getItem("token"),

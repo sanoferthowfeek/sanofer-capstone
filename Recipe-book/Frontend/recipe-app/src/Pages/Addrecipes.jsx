@@ -30,7 +30,7 @@ async  function postNewRecipes(){
     // imageurl,
     comments
   };
-  const res = await fetch('http://localhost:8000/api/recipes/user/add',{
+  const res = await fetch('https://recipe-books.onrender.com/api/recipes/user/add',{
     method:"POST",
     body: JSON.stringify(recipes),
     headers: {
