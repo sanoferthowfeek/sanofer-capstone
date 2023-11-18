@@ -44,7 +44,7 @@ async  function editNewRecipes(){
     ingredients,
     steps
   };
-  const res = await fetch(`https://recipe-books.onrender.com/api/recipes/user/edit/${id}`,{
+  const res = await fetch(`https://recipebooks-6ycq.onrender.com/api/recipes/user/edit/${id}`,{
     method:"PUT",
     body: JSON.stringify(recipes),
     headers: {

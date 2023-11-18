@@ -17,7 +17,7 @@ const payload ={
   email,
   password,
 };
-const res =await fetch('https://recipe-books.onrender.com/api/user/login',{
+const res =await fetch('https://recipebooks-6ycq.onrender.com/api/user/login',{
 method: "POST",
 body: JSON.stringify(payload),
 headers: {

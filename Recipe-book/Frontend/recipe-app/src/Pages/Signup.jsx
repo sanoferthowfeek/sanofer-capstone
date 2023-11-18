@@ -19,7 +19,7 @@ const Signup = () => {
       email,
       password,
     };
-    const res =await fetch('https://recipe-books.onrender.com/api/user/signup',{
+    const res =await fetch('https://recipebooks-6ycq.onrender.com/api/user/signup',{
     method: "POST",
     body: JSON.stringify(payload),
     headers: {
