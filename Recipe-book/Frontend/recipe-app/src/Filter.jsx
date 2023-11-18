@@ -17,7 +17,11 @@ export default function Filter() {
       options={menus}
       getOptionLabel={(option) => option.title}
       filterOptions={filterOptions}
-      onClick={() =>navigate(`/${option.title}`)}
+      onChange={(event, option) => {
+        if (option) {
+          navigate(`/${option.title}`);
+        }
+      }}
       sx={{ width: 300 }}
       renderInput={(params) => <TextField  {...params} label="Search"  />}
     />
@@ -29,15 +33,15 @@ const menus = [
   
   { title: 'All'},
   { title: 'Breakfast'},
-  { title: 'Cooldrinks'},
+  { title: 'Cool drinks'},
   { title: 'Dessert'},
   { title: 'Dinner'},
   { title: 'Lunch'},
   { title: 'Mojitos'},
-  { title: 'Nonveg'},
+  { title: 'Non-veg'},
   { title: 'Pasta'},
   { title: 'Salads'},
   { title: 'Soups'},
-  { title: 'Vegmeal'},
+  { title: 'Veg-meal'},
  
 ];
