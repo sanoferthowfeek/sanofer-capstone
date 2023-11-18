@@ -14,7 +14,7 @@ function Addrecipes({userRecipes,setUserRecipes}) {
   const[steps,setSteps] = useState("");
   const [err,setErr] = useState("");
   const[msg,setMsg] = useState("");
-  const [image, setImage] = useState("");
+  // const [image, setImage] = useState("");
   const[comments,setComments] = useState("");
 
   
@@ -27,10 +27,10 @@ async  function postNewRecipes(){
     timings,
     ingredients,
     steps,
-    imageurl,
+    // imageurl,
     comments
   };
-  const res = await fetch('https://recipebook-li3m.onrender.com/api/recipes/user/add',{
+  const res = await fetch('http://localhost:8000/api/recipes/user/add',{
     method:"POST",
     body: JSON.stringify(recipes),
     headers: {

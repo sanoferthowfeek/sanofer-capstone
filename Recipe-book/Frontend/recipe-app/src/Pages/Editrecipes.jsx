@@ -43,7 +43,7 @@ async  function editNewRecipes(){
     ingredients,
     steps
   };
-  const res = await fetch(`https://recipebook-li3m.onrender.com/api/recipes/user/edit/${id}`,{
+  const res = await fetch(`http://localhost:8000/api/recipes/user/edit/${id}`,{
     method:"PUT",
     body: JSON.stringify(recipes),
     headers: {

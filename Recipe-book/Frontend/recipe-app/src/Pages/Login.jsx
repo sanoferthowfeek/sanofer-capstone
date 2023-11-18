@@ -16,7 +16,7 @@ const payload ={
   email,
   password,
 };
-const res =await fetch('https://recipe-9zt9.onrender.com/api/user/login',{
+const res =await fetch('http://localhost:8000/api/user/login',{
 method: "POST",
 body: JSON.stringify(payload),
 headers: {
