@@ -1,6 +1,7 @@
 import React from 'react'
 import Cards from '../Cards.jsx'
 import Heading from '../Base/Heading.jsx';
+import Base from '../Base/Base.jsx';
 
 
 function All() {
@@ -8,7 +9,8 @@ function All() {
   
   return (
     <div>
-      <Heading title={"ALL RECIPES"}></Heading>
+      <Base title={"ALL RECIPES"}></Base>
+      <Heading />
      
       <Cards  name="Yogurt Toast" 
          type="Yogurt" 

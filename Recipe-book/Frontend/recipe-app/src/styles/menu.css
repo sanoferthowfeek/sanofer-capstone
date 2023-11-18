@@ -1,14 +1,14 @@
 .menu{
     max-width: 500px;
-    margin: auto;
+    /* margin: auto; */
     place-items: center;
     min-width: 320px;
     
   }
 
-  .allback{
+  .allback1{
     display:inline;
-    margin: 20px;
+    margin: 10px;
     float:right;
     color: black;
     width: 15 px;
@@ -21,7 +21,7 @@
   
   
   
-  .allback:hover{
+  .allback1:hover{
     background-color: #f48fb1;
     color: black;
     border-color: red;

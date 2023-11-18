@@ -1,8 +1,8 @@
 footer {
     text-align: center;
     padding: 3px;
-    background-color: #ff5722;
-    color: white;
+    /* background-color: white; */
+    color: black;
     position: fixed;
     left: 0;
     bottom: 0;

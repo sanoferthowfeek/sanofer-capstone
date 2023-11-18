@@ -1,11 +1,13 @@
 import React from 'react'
 import Cards from '../Cards.jsx'
 import Heading from '../Base/Heading.jsx';
+import Base from '../Base/Base.jsx';
 
 function Pasta() {
   return (
     <div>
-     <Heading title={"PASTA"}></Heading>
+     <Base title={"PASTA"}></Base>
+     <Heading />
      <Cards  name="Creamy Tomato Pasta" 
          type="Pasta" 
          time="25 minutes" 

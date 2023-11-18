@@ -148,13 +148,13 @@ export default function Menus() {
       <div className='menubase'>
       <Base  />
       </div>
+      <div>
       <h2 className='heading'>Menus</h2>
-      <div className='allback'>
+      <Filter  />
+      <div className='allback1'>
       <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
-      <Filter  />
-      <br />
-      <br />
+      </div>
       <br />
       <br />
       <div className='menu'>

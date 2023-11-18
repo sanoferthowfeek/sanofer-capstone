@@ -1,11 +1,13 @@
 import React from 'react'
 import Cards from '../Cards.jsx'
 import Heading from '../Base/Heading.jsx';
+import Base from '../Base/Base.jsx';
 
 function Lunch() {
   return (
     <div>
-      <Heading title={"LUNCH"}></Heading>
+      <Base title={"LUNCH"}></Base>
+      <Heading />
       <Cards  name="Fried Rice" 
          type="Rice" 
          time="20 minutes" 

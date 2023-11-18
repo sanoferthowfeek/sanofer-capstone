@@ -1,11 +1,13 @@
 import React from 'react'
 import Cards from '../Cards.jsx'
 import Heading from '../Base/Heading.jsx';
+import Base from '../Base/Base.jsx';
 
 function Nonveg() {
   return (
     <div>
-      <Heading title={"NON-VEGETARIAN"}></Heading>
+      <Base title={"NON-VEGETARIAN"}></Base>
+      <Heading />
       <Cards  name="Chicken-65" 
          type="Nonveg" 
          time="15 minutes" 

@@ -9,7 +9,7 @@ function Heading({title}) {
     return (
 
     <div className='cardheader'>
-    <h1 className='heading'>{title}</h1>
+    {/* <h1 className='heading'>{title}</h1> */}
     <div className='back'>
     <button type="button" 
     onClick={() =>navigate("/menus")} >

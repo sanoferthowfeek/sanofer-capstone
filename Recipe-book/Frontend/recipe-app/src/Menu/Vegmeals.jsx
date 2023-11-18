@@ -1,11 +1,13 @@
 import React from 'react'
 import Cards from '../Cards.jsx'
 import Heading from '../Base/Heading.jsx';
+import Base from '../Base/Base.jsx';
 
 function Vegmeals() {
   return (
     <div>
-      <Heading title={"VEGETARIAN"}></Heading>
+      <Base title={"VEGETARIAN"}></Base>
+      <Heading />
       <Cards  name="Potato Fry" 
          type="Vegetables" 
          time="10 minutes" 

@@ -1,11 +1,13 @@
 import React from 'react'
 import Cards from '../Cards.jsx'
 import Heading from '../Base/Heading.jsx';
+import Base from '../Base/Base.jsx';
 
 function Dessert() {
   return (
     <div>
-     <Heading title={"DESSERT"}></Heading>
+     <Base title={"DESSERT"}></Base>
+     <Heading />
      <Cards  name="Rava Kesari" 
          type="Kesari" 
          time="10 minutes" 

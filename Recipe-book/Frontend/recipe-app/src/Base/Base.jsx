@@ -1,15 +1,18 @@
 import React from 'react';
-import {AppBar,Typography,Toolbar,IconButton}from '@mui/material';
-import {useNavigate} from 'react-router-dom';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import {useNavigate,NavLink} from 'react-router-dom';
 import LogoutIcon from '@mui/icons-material/Logout';
 import LoginIcon from '@mui/icons-material/Login';
 import AppsIcon from '@mui/icons-material/Apps';
-import HomeIcon from '@mui/icons-material/Home';
-import InfoIcon from '@mui/icons-material/Info';
 import VpnKeyIcon from '@mui/icons-material/VpnKey';
-import MenuBookIcon from '@mui/icons-material/MenuBook';
 import '../styles/base.css'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import AddToPhotosIcon from '@mui/icons-material/AddToPhotos';
+import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
+import EditIcon from '@mui/icons-material/Edit';
+import PageviewIcon from '@mui/icons-material/Pageview';
 
 function Base({ title,children}) {
 
@@ -22,63 +25,54 @@ navigate("/signup");
 
 return (
 <div >
-<header>
-<AppBar position="static" style={{backgroundColor:"#ff5722",color:"white"}}>
-<Toolbar variant="dense">
-<Typography sx={{ mr: 2 }}>
-<AppsIcon />
-RECIPE_BOOK
-</Typography>
+<Navbar collapseOnSelect expand="lg" >
+      <Container >
+        <Navbar.Brand ><AppsIcon />RECIPE_BOOK</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link onClick={() =>navigate("/")}>Home</Nav.Link>
+            <Nav.Link onClick={() =>navigate("/menus")}>Menus</Nav.Link>
+            <Nav.Link 
+            onClick={() =>navigate("/about")}>About</Nav.Link>
+            <NavDropdown title="Register" id="collapsible-nav-dropdown">
+              <NavDropdown.Item onClick={() =>navigate("/signup")}>
+                Signup 
+                <VpnKeyIcon /></NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item onClick={() =>navigate("/login")}>
+                Login
+                <LoginIcon />
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Recipes" id="collapsible-nav-dropdown">
+              <NavDropdown.Item onClick={() =>navigate("/recipes")}><CollectionsBookmarkIcon /> All Recipes</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item onClick={() =>navigate("/myrecipes")}>
+              <PageviewIcon />
+                My Recipes
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item onClick={() =>navigate("/add")}>
+              <AddToPhotosIcon />
+                Add Recipes
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item onClick={() =>navigate("/edit/:id")}>
+              <EditIcon /> 
+                Edit Recipes
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <Nav>
+            <Nav.Link onClick={handleLogout}><LogoutIcon />Logout</Nav.Link>
+           
+             
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
 
-<IconButton 
-edge="end" color="inherit" aria-label="Home" 
-onClick={() =>navigate("/")}
-sx={{ mr: 2 }}>
-<HomeIcon />  Home
-</IconButton>
-
-<IconButton 
-edge="end" color="inherit" aria-label="Menus" 
-onClick={() =>navigate("/menus")}
-sx={{ mr: 2 }}>
-<MenuBookIcon />  Menus
-</IconButton>
-
-<IconButton 
-edge="end" color="inherit" aria-label="About" 
-onClick={() =>navigate("/about")}
-sx={{ mr: 2 }}>
-<InfoIcon />
-About
-</IconButton>
-
-<IconButton 
-edge="end" color="inherit" aria-label="Signup" 
-onClick={() =>navigate("/signup")}
-sx={{ mr: 2 }}>
-<VpnKeyIcon />
-Signup
-</IconButton>
-
-<IconButton 
-edge="end" color="inherit" aria-label="Login" 
-onClick={() =>navigate("/login")}
-sx={{ mr: 2 }}>
-<LoginIcon />
-Login
-</IconButton>
-
-<IconButton 
-edge="end" color="inherit" aria-label="Logout" 
-onClick={handleLogout}
-sx={{ mr: 2 }}>
-<LogoutIcon />  Logout
-</IconButton>
-
-<AccountCircleIcon />
-</Toolbar>
-</AppBar>
-</header>
 <main>
 <h1 className='basehead'>{title}</h1>
 <div className='content'>{children}</div>

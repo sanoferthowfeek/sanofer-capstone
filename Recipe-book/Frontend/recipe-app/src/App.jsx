@@ -22,6 +22,7 @@ import Vegmeals from './Menu/Vegmeals.jsx';
 import Pasta from './Menu/Pasta.jsx';
 import Salads from './Menu/Salads.jsx';
 import Soups from './Menu/Soups.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {

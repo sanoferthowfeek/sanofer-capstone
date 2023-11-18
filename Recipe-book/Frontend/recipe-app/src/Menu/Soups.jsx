@@ -1,11 +1,13 @@
 import React from 'react'
 import Cards from '../Cards.jsx'
 import Heading from '../Base/Heading.jsx';
+import Base from '../Base/Base.jsx';
 
 function Soups() {
   return (
     <div>
-      <Heading title={"SOUPS"}></Heading>
+      <Base title={"SOUPS"}></Base>
+      <Heading />
       <Cards  name="Cream of Mushroom Soup" 
          type="Soup" 
          time="30 minutes" 

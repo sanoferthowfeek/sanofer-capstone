@@ -1,11 +1,13 @@
 import React from 'react'
 import Cards from '../Cards.jsx'
 import Heading from '../Base/Heading.jsx';
+import Base from '../Base/Base.jsx';
 
 function Mojitos() {
   return (
     <div>
-      <Heading title={"MOJITOS"}></Heading>
+      <Base title={"MOJITOS"}></Base>
+      <Heading />
       <Cards  name="Mint Mojito" 
          type="Drinks" 
          time="5 minutes" 
