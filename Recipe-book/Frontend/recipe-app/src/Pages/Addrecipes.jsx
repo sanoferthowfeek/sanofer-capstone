@@ -54,7 +54,7 @@ async  function postNewRecipes(){
       <div className='allback'>
       <Button onClick={() =>navigate("/")}><ArrowBackIosNewIcon /> Back</Button>
       </div>
-      <form className='form'>
+      {/* <form className='form'> */}
  <TextField 
         fullWidth
         label="Recipe Name"
@@ -118,7 +118,7 @@ onClick={postNewRecipes}>Add Recipes</Button>
 
 {err ? <Typography color={"danger"}>{err}</Typography>:""}
 {msg ? <Typography color={"success"}>{msg}</Typography>:""}
-</form>
+{/* </form> */}
 </Base>
 </div>
 )
